@@ -12,10 +12,13 @@ public class marble_center_controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = marbleSphere.position;
+        transform.position = Vector3.Lerp(transform.position, marbleSphere.position, pLerp);
 
-        turn.y += Input.GetAxis("Mouse Y") * sensitivity;
-        turn.x += Input.GetAxis("Mouse X") * sensitivity;
-        transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
+        if (Input.GetMouseButton(1))
+        {
+            turn.y += Input.GetAxis("Mouse Y") * sensitivity;
+            turn.x += Input.GetAxis("Mouse X") * sensitivity;
+            transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
+        }
     }
 }
