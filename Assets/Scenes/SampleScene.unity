@@ -945,7 +945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d798ce427c85383489e5f0b4d94fad02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torque: 50
+  torque: 5
+  maxAngularVelocity: 20
   rb: {fileID: 1941122279}
   gameCamera: {fileID: 963194228}
 --- !u!1 &2002850947

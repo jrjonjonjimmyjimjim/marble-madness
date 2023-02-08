@@ -6,6 +6,7 @@ public class marble_sphere_controller : MonoBehaviour
 {
     // Start is called before the first frame update
     public float torque;
+    public float maxAngularVelocity;
     public Rigidbody rb;
     public Transform gameCamera;
 
@@ -14,6 +15,7 @@ public class marble_sphere_controller : MonoBehaviour
 
     void Start()
     {
+        rb.maxAngularVelocity = maxAngularVelocity;
         //rb = GetComponent<Rigidbody>();
     }
 
