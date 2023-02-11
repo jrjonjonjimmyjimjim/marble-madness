@@ -1058,6 +1058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torque: 5
   maxAngularVelocity: 20
+  jumpForce: 2500
   rb: {fileID: 1941122279}
   gameCamera: {fileID: 963194228}
 --- !u!1 &1982773071

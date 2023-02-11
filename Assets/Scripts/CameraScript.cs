@@ -6,8 +6,8 @@ public class CameraScript : MonoBehaviour
 {
 
     public Transform camTarget;
-    public float pLerp = .02f;
-    public float rLerp = .01f;
+    public float pLerp;
+    public float rLerp;
 
     void Update()
     {

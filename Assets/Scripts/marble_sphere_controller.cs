@@ -7,15 +7,19 @@ public class marble_sphere_controller : MonoBehaviour
     // Start is called before the first frame update
     public float torque;
     public float maxAngularVelocity;
+    public float jumpForce;
     public Rigidbody rb;
     public Transform gameCamera;
 
     private float mouseXStart;
     private float mouseYStart;
 
+    private bool canJump;
+
     void Start()
     {
         rb.maxAngularVelocity = maxAngularVelocity;
+        canJump = false;
         //rb = GetComponent<Rigidbody>();
     }
 
@@ -49,5 +53,16 @@ public class marble_sphere_controller : MonoBehaviour
             rb.AddTorque(gameCamera.forward * torque * sideAmount);
             rb.AddTorque(gameCamera.right * torque * forwardAmount);
         }
+
+        if (Input.GetButton("Jump")) {
+            if (canJump) {
+                canJump = false;
+                rb.AddForce(new Vector3(0, jumpForce, 0));
+            }
+        }
+    }
+
+    void OnCollisionEnter(Collision collision) {
+        canJump = true;
     }
 }
