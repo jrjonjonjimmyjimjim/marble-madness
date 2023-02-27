@@ -13,7 +13,6 @@ using UnityEngine.UI;
 public class SettingsMenu : MonoBehaviour
 {
     public Toggle fullscreenTog;
-    public TMP_Dropdown resolutionDropdown;
     public TMP_Dropdown qualityDropdown;
 
     // TODO: Implement the audio mixer or whatever to make the sound actually change
@@ -21,20 +20,12 @@ public class SettingsMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public Slider volumeSlider;
     public TextMeshProUGUI volumeText;
-
-    private readonly List<ResItem> _resolutions = new()
-    {
-        new ResItem(1920, 1080),
-        new ResItem(1280, 720),
-        new ResItem(854, 480)
-    };
-
     private float _currentVolume;
 
-    // TODO: find a way to NOT hardcode these values
-    // TODO: If we change the resolution, then everything fucks up because the
-    // all of the panels, buttons, etc. were placed with absolute values, not relative so fix that
+    public TMP_Dropdown resolutionDropdown;
+    private Resolution[] _resolutions;
     private int _selectedResolution;
+
 
     /// <summary>
     ///     On start, adjust the volume of the game to whatever the value of the slider is,
@@ -44,13 +35,18 @@ public class SettingsMenu : MonoBehaviour
     {
         AdjustVolume(volumeSlider.value);
 
+        // Get the resolutions from the screen and add them to the dropdown
+        _resolutions = Screen.resolutions;
+        Array.Reverse(_resolutions);
         resolutionDropdown.ClearOptions();
-        resolutionDropdown.AddOptions(_resolutions.Select(x => $"{x.Width}x{x.Height}").ToList()
+        resolutionDropdown.AddOptions(_resolutions
+            .Select(resolution => $"{resolution.width} x {resolution.height} @ {resolution.refreshRate}Hz")
+            .ToList()
         );
-
-        resolutionDropdown.value = 0;
+        resolutionDropdown.value = _selectedResolution = 0;
         resolutionDropdown.RefreshShownValue();
 
+        // Set the quality dropdown to the current quality
         ApplyGraphics();
     }
 
@@ -87,24 +83,7 @@ public class SettingsMenu : MonoBehaviour
     /// </summary>
     public void ApplyGraphics()
     {
-        Screen.SetResolution(_resolutions[_selectedResolution].Width,
-            _resolutions[_selectedResolution].Height,
+        Screen.SetResolution(_resolutions[_selectedResolution].width, _resolutions[_selectedResolution].height,
             fullscreenTog.isOn);
     }
-}
-
-/// <summary>
-///     An object that encapsulates resolutions in pixel
-/// </summary>
-[Serializable]
-public class ResItem
-{
-    public ResItem(int width, int height)
-    {
-        Width = width;
-        Height = height;
-    }
-
-    public int Height { get; set; }
-    public int Width { get; set; }
 }
