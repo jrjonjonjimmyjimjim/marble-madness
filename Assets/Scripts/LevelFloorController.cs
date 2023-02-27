@@ -1,7 +1,8 @@
 using UnityEngine;
 
 /// <summary>
-///     TODO: Fill this in
+///     Controller for the bottom of the level, which resets the player's
+///     position
 /// </summary>
 public class LevelFloorController : MonoBehaviour
 {

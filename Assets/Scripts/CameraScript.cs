@@ -2,7 +2,8 @@ using UnityEngine;
 
 /// <summary>
 ///     Define behaviour for the camera such that it follows the player, or more
-///     specifically the center of the marble
+///     specifically the center of the marble (no crazy camera rotation that
+///     way)
 /// </summary>
 public class CameraScript : MonoBehaviour
 {

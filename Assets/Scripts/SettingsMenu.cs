@@ -8,15 +8,18 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 
 /// <summary>
-///     Define behaviour for the settings screen on the menu for adjusting resolutions, volume, etc.
+///     Define behaviour for the settings screen on the menu for adjusting
+///     resolutions, volume, etc.
 /// </summary>
 public class SettingsMenu : MonoBehaviour
 {
     public Toggle fullscreenTog;
     public TMP_Dropdown qualityDropdown;
 
-    // TODO: Implement the audio mixer or whatever to make the sound actually change
-    // Right now, I think only the slider bar reacts, but doesn't actually do anything
+    // TODO: Implement the audio mixer or whatever to make the sound actually
+    // change
+    // Right now, I think only the slider bar reacts, but doesn't actually do
+    // anything
     public AudioMixer audioMixer;
     public Slider volumeSlider;
     public TextMeshProUGUI volumeText;
