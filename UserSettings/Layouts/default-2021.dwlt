@@ -15,11 +15,11 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 43
-    width: 1920
-    height: 997
+    y: 42
+    width: 1536
+    height: 782
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,12 +43,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 947
+    width: 1536
+    height: 732
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 102
+  controlID: 48
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -59,23 +59,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1466
+    x: 1172.8
     y: 0
-    width: 454
-    height: 947
-  m_MinSize: {x: 276, y: 71}
+    width: 363.19995
+    height: 732
+  m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +93,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 363
-    height: 561
+    width: 290.4
+    height: 433.6
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 561
-    width: 1466
-    height: 386
+    y: 433.6
+    width: 1172.8
+    height: 298.4
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 13}
@@ -149,8 +149,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 997
+    width: 1536
+    height: 782
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -174,7 +174,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1536
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -195,8 +195,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
-    width: 1920
+    y: 762
+    width: 1536
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -219,12 +219,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1466
-    height: 947
+    width: 1172.8
+    height: 732
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 70
+  controlID: 49
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,12 +244,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1466
-    height: 561
+    width: 1172.8
+    height: 433.6
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 71
+  controlID: 50
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,10 +265,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 363
+    x: 290.4
     y: 0
-    width: 1103
-    height: 561
+    width: 882.4
+    height: 433.6
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
@@ -297,10 +297,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1466
-    y: 73
-    width: 453
-    height: 926
+    x: 1172.8
+    y: 72
+    width: 362.19995
+    height: 711
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -309,12 +309,12 @@ MonoBehaviour:
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 1
-  currentStatusEntriesHasUpdate: 1
-  repositoryProgressHasUpdate: 1
+  currentTrackingStatusHasUpdate: 0
+  currentStatusEntriesHasUpdate: 0
+  repositoryProgressHasUpdate: 0
   appManagerProgressHasUpdate: 0
-  changeTab: 3
-  activeTab: 3
+  changeTab: 2
+  activeTab: 2
   initProjectView:
     hasCompletedInitialCheck: 0
     isUserDataPresent: 0
@@ -452,7 +452,7 @@ MonoBehaviour:
     remoteBranches: []
   changesView:
     currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 1
+    currentStatusEntriesHasUpdate: 0
     currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
@@ -515,18 +515,510 @@ MonoBehaviour:
     gitStatusEntries: []
     changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-02-03T16:35:09.431-07:00
+      updatedTimeString: 2023-02-08T11:48:47.749-07:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-02-03T16:41:54.199-07:00
+      updatedTimeString: 2023-02-08T11:49:06.785-07:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2023-02-03T16:34:11.262-07:00
+      updatedTimeString: 2023-02-08T11:48:47.642-07:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: c7ed99d0a7da67b7c31b809e391c83d84a50bba6
+      mergeA: 
+      mergeB: 
+      authorName: Jonathon Robel
+      authorEmail: jonrrobel@gmail.com
+      commitEmail: jonrrobel@gmail.com
+      commitName: Jonathon Robel
+      summary: Marble movement with left mouse working
+      description: 
+      timeString: 2023-02-08T11:42:02.000-07:00
+      commitTimeString: 2023-02-08T11:42:02.000-07:00
+      changes:
+      - path: Assets\Scripts\marble_sphere_controller.cs
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\marble_sphere_controller.cs
+        projectPath: Assets\Scripts\marble_sphere_controller.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\marble_sphere_controller.cs.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\marble_sphere_controller.cs.meta
+        projectPath: Assets\Scripts\marble_sphere_controller.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: d65e4e7c7d8ae15efb2d95d49b5ce42c20483ff5
+      mergeA: 
+      mergeB: 
+      authorName: Jonathon Robel
+      authorEmail: jonrrobel@gmail.com
+      commitEmail: jonrrobel@gmail.com
+      commitName: Jonathon Robel
+      summary: Better initial camera position
+      description: 
+      timeString: 2023-02-08T11:33:40.000-07:00
+      commitTimeString: 2023-02-08T11:33:40.000-07:00
+      changes:
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 0d278056cf0a69723f07c11c24a1ececc11dd4c2
+      mergeA: 
+      mergeB: 
+      authorName: Jonathon Robel
+      authorEmail: jonrrobel@gmail.com
+      commitEmail: jonrrobel@gmail.com
+      commitName: Jonathon Robel
+      summary: Marble movement working with wasd
+      description: 
+      timeString: 2023-02-08T11:31:15.000-07:00
+      commitTimeString: 2023-02-08T11:31:15.000-07:00
+      changes:
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 698c824b78e7ce8298589c908f0f06f119aabdfd
+      mergeA: 
+      mergeB: 
+      authorName: Jonathon Robel
+      authorEmail: jonrrobel@gmail.com
+      commitEmail: jonrrobel@gmail.com
+      commitName: Jonathon Robel
+      summary: Cleaned up marble GameObject
+      description: 
+      timeString: 2023-02-04T09:37:52.000-07:00
+      commitTimeString: 2023-02-04T09:37:52.000-07:00
+      changes:
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 854ab05b0475180d973fd3d3fcecd07bee2125a9
+      mergeA: 
+      mergeB: 
+      authorName: Jonathon Robel
+      authorEmail: jonrrobel@gmail.com
+      commitEmail: jonrrobel@gmail.com
+      commitName: Jonathon Robel
+      summary: Forgot to save SampleScene, oops
+      description: 
+      timeString: 2023-02-04T09:28:06.000-07:00
+      commitTimeString: 2023-02-04T09:28:06.000-07:00
+      changes:
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: f31f668b73cf6fb2bdfe7096bf177735c9e47269
+      mergeA: 
+      mergeB: 
+      authorName: Jonathon Robel
+      authorEmail: jonrrobel@gmail.com
+      commitEmail: jonrrobel@gmail.com
+      commitName: Jonathon Robel
+      summary: Only allow camera movement while right clicking
+      description: 
+      timeString: 2023-02-04T00:10:59.000-07:00
+      commitTimeString: 2023-02-04T00:10:59.000-07:00
+      changes:
+      - path: Assets\Scripts\marble_center_controller.cs
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\marble_center_controller.cs
+        projectPath: Assets\Scripts\marble_center_controller.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: c58c7c5fcb2c8869bc9698f8927dc1aa0b903d74
+      mergeA: 
+      mergeB: 
+      authorName: Jonathon Robel
+      authorEmail: jonrrobel@gmail.com
+      commitEmail: jonrrobel@gmail.com
+      commitName: Jonathon Robel
+      summary: Camera that follows marble implemented
+      description: 
+      timeString: 2023-02-03T23:59:58.000-07:00
+      commitTimeString: 2023-02-03T23:59:58.000-07:00
+      changes:
+      - path: Assets\Materials\mat_marble.mat
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\mat_marble.mat
+        projectPath: Assets\Materials\mat_marble.mat
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts.meta
+        projectPath: Assets\Scripts.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\CameraScript.cs
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\CameraScript.cs
+        projectPath: Assets\Scripts\CameraScript.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\CameraScript.cs.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\CameraScript.cs.meta
+        projectPath: Assets\Scripts\CameraScript.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\marble_center_controller.cs
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\marble_center_controller.cs
+        projectPath: Assets\Scripts\marble_center_controller.cs
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\marble_center_controller.cs.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\marble_center_controller.cs.meta
+        projectPath: Assets\Scripts\marble_center_controller.cs.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+    - commitID: 1625a3986ffc3c65895a8fd70c640e53e3fb71f5
+      mergeA: 
+      mergeB: 
+      authorName: Jonathon Robel
+      authorEmail: jonrrobel@gmail.com
+      commitEmail: jonrrobel@gmail.com
+      commitName: Jonathon Robel
+      summary: Added custom marble texture
+      description: 
+      timeString: 2023-02-03T17:18:30.000-07:00
+      commitTimeString: 2023-02-03T17:18:30.000-07:00
+      changes:
+      - path: Assets\Textures.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures.meta
+        projectPath: Assets\Textures.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Textures\txt_marble.kra
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.kra
+        projectPath: Assets\Textures\txt_marble.kra
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Textures\txt_marble.kra.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.kra.meta
+        projectPath: Assets\Textures\txt_marble.kra.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Textures\txt_marble.kra~
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.kra~
+        projectPath: Assets\Textures\txt_marble.kra~
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Textures\txt_marble.png
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.png
+        projectPath: Assets\Textures\txt_marble.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Textures\txt_marble.png.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.png.meta
+        projectPath: Assets\Textures\txt_marble.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Textures\txt_marble.png~
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.png~
+        projectPath: Assets\Textures\txt_marble.png~
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2021.dwlt
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\UserSettings\Layouts\default-2021.dwlt
+        projectPath: UserSettings\Layouts\default-2021.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: e45b5ca7865f8cf0313515f06c09558cb2db6dd9
+      mergeA: 
+      mergeB: 
+      authorName: Jonathon Robel
+      authorEmail: jonrrobel@gmail.com
+      commitEmail: jonrrobel@gmail.com
+      commitName: Jonathon Robel
+      summary: Changed marble color
+      description: 
+      timeString: 2023-02-03T16:34:58.000-07:00
+      commitTimeString: 2023-02-03T16:34:58.000-07:00
+      changes:
+      - path: Assets\Materials\mat_marble.mat
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\mat_marble.mat
+        projectPath: Assets\Materials\mat_marble.mat
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 2b683e22b4986fe672d8841871aa6e2c8174fdf8
+      mergeA: 
+      mergeB: 
+      authorName: Jonathon Robel
+      authorEmail: jonrrobel@gmail.com
+      commitEmail: jonrrobel@gmail.com
+      commitName: Jonathon Robel
+      summary: Ball and some walls; testing physics
+      description: 
+      timeString: 2023-02-03T16:10:06.000-07:00
+      commitTimeString: 2023-02-03T16:10:06.000-07:00
+      changes:
+      - path: Assets\Materials.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials.meta
+        projectPath: Assets\Materials.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Materials\mat_marble.mat
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\mat_marble.mat
+        projectPath: Assets\Materials\mat_marble.mat
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Materials\mat_marble.mat.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\mat_marble.mat.meta
+        projectPath: Assets\Materials\mat_marble.mat.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Materials\pmat_marble.physicMaterial
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\pmat_marble.physicMaterial
+        projectPath: Assets\Materials\pmat_marble.physicMaterial
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Materials\pmat_marble.physicMaterial.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\pmat_marble.physicMaterial.meta
+        projectPath: Assets\Materials\pmat_marble.physicMaterial.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Plugins.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Plugins.meta
+        projectPath: Assets\Plugins.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes.meta
+        projectPath: Assets\Scenes.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\SampleScene.unity.meta
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity.meta
+        projectPath: Assets\Scenes\SampleScene.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\manifest.json
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Packages\manifest.json
+        projectPath: Packages\manifest.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Packages\packages-lock.json
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Packages\packages-lock.json
+        projectPath: Packages\packages-lock.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\AudioManager.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\AudioManager.asset
+        projectPath: ProjectSettings\AudioManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ClusterInputManager.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\ClusterInputManager.asset
+        projectPath: ProjectSettings\ClusterInputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\DynamicsManager.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\DynamicsManager.asset
+        projectPath: ProjectSettings\DynamicsManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorBuildSettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\EditorBuildSettings.asset
+        projectPath: ProjectSettings\EditorBuildSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\EditorSettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\EditorSettings.asset
+        projectPath: ProjectSettings\EditorSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\GraphicsSettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\GraphicsSettings.asset
+        projectPath: ProjectSettings\GraphicsSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\InputManager.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\InputManager.asset
+        projectPath: ProjectSettings\InputManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\MemorySettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\MemorySettings.asset
+        projectPath: ProjectSettings\MemorySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\NavMeshAreas.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\NavMeshAreas.asset
+        projectPath: ProjectSettings\NavMeshAreas.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\PackageManagerSettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\PackageManagerSettings.asset
+        projectPath: ProjectSettings\PackageManagerSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+        projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\Physics2DSettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\Physics2DSettings.asset
+        projectPath: ProjectSettings\Physics2DSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\PresetManager.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\PresetManager.asset
+        projectPath: ProjectSettings\PresetManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectSettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\ProjectSettings.asset
+        projectPath: ProjectSettings\ProjectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\ProjectVersion.txt
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\ProjectVersion.txt
+        projectPath: ProjectSettings\ProjectVersion.txt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\QualitySettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\QualitySettings.asset
+        projectPath: ProjectSettings\QualitySettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\SceneTemplateSettings.json
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\SceneTemplateSettings.json
+        projectPath: ProjectSettings\SceneTemplateSettings.json
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\TimeManager.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\TimeManager.asset
+        projectPath: ProjectSettings\TimeManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\UnityConnectSettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\UnityConnectSettings.asset
+        projectPath: ProjectSettings\UnityConnectSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\VFXManager.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\VFXManager.asset
+        projectPath: ProjectSettings\VFXManager.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\VersionControlSettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\VersionControlSettings.asset
+        projectPath: ProjectSettings\VersionControlSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\XRSettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\XRSettings.asset
+        projectPath: ProjectSettings\XRSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: ProjectSettings\boot.config
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\boot.config
+        projectPath: ProjectSettings\boot.config
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\EditorUserSettings.asset
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\UserSettings\EditorUserSettings.asset
+        projectPath: UserSettings\EditorUserSettings.asset
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2021.dwlt
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\UserSettings\Layouts\default-2021.dwlt
+        projectPath: UserSettings\Layouts\default-2021.dwlt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Search.settings
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\UserSettings\Search.settings
+        projectPath: UserSettings\Search.settings
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
     - commitID: 6ee1535ffbb43f94d9f459e639c130cfb63ea4d9
       mergeA: 
       mergeB: 
@@ -540,33 +1032,525 @@ MonoBehaviour:
       commitTimeString: 2023-02-03T14:14:10.000-07:00
       changes:
       - path: .gitattributes
-        fullPath: C:\Users\jrrob\Marble Madness\.gitattributes
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\.gitattributes
         projectPath: .gitattributes
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: .gitignore
-        fullPath: C:\Users\jrrob\Marble Madness\.gitignore
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\.gitignore
         projectPath: .gitignore
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
       - path: Assets\.gitignore
-        fullPath: C:\Users\jrrob\Marble Madness\Assets\.gitignore
+        fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\.gitignore
         projectPath: Assets\.gitignore
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2023-02-03T16:02:13.485-07:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2023-02-03T16:02:13.255-07:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: c7ed99d0a7da67b7c31b809e391c83d84a50bba6
+        mergeA: 
+        mergeB: 
+        authorName: Jonathon Robel
+        authorEmail: jonrrobel@gmail.com
+        commitEmail: jonrrobel@gmail.com
+        commitName: Jonathon Robel
+        summary: Marble movement with left mouse working
+        description: 
+        timeString: 2023-02-08T11:42:02.000-07:00
+        commitTimeString: 2023-02-08T11:42:02.000-07:00
+        changes:
+        - path: Assets\Scripts\marble_sphere_controller.cs
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\marble_sphere_controller.cs
+          projectPath: Assets\Scripts\marble_sphere_controller.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\marble_sphere_controller.cs.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\marble_sphere_controller.cs.meta
+          projectPath: Assets\Scripts\marble_sphere_controller.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: d65e4e7c7d8ae15efb2d95d49b5ce42c20483ff5
+        mergeA: 
+        mergeB: 
+        authorName: Jonathon Robel
+        authorEmail: jonrrobel@gmail.com
+        commitEmail: jonrrobel@gmail.com
+        commitName: Jonathon Robel
+        summary: Better initial camera position
+        description: 
+        timeString: 2023-02-08T11:33:40.000-07:00
+        commitTimeString: 2023-02-08T11:33:40.000-07:00
+        changes:
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 0d278056cf0a69723f07c11c24a1ececc11dd4c2
+        mergeA: 
+        mergeB: 
+        authorName: Jonathon Robel
+        authorEmail: jonrrobel@gmail.com
+        commitEmail: jonrrobel@gmail.com
+        commitName: Jonathon Robel
+        summary: Marble movement working with wasd
+        description: 
+        timeString: 2023-02-08T11:31:15.000-07:00
+        commitTimeString: 2023-02-08T11:31:15.000-07:00
+        changes:
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 698c824b78e7ce8298589c908f0f06f119aabdfd
+        mergeA: 
+        mergeB: 
+        authorName: Jonathon Robel
+        authorEmail: jonrrobel@gmail.com
+        commitEmail: jonrrobel@gmail.com
+        commitName: Jonathon Robel
+        summary: Cleaned up marble GameObject
+        description: 
+        timeString: 2023-02-04T09:37:52.000-07:00
+        commitTimeString: 2023-02-04T09:37:52.000-07:00
+        changes:
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 854ab05b0475180d973fd3d3fcecd07bee2125a9
+        mergeA: 
+        mergeB: 
+        authorName: Jonathon Robel
+        authorEmail: jonrrobel@gmail.com
+        commitEmail: jonrrobel@gmail.com
+        commitName: Jonathon Robel
+        summary: Forgot to save SampleScene, oops
+        description: 
+        timeString: 2023-02-04T09:28:06.000-07:00
+        commitTimeString: 2023-02-04T09:28:06.000-07:00
+        changes:
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: f31f668b73cf6fb2bdfe7096bf177735c9e47269
+        mergeA: 
+        mergeB: 
+        authorName: Jonathon Robel
+        authorEmail: jonrrobel@gmail.com
+        commitEmail: jonrrobel@gmail.com
+        commitName: Jonathon Robel
+        summary: Only allow camera movement while right clicking
+        description: 
+        timeString: 2023-02-04T00:10:59.000-07:00
+        commitTimeString: 2023-02-04T00:10:59.000-07:00
+        changes:
+        - path: Assets\Scripts\marble_center_controller.cs
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\marble_center_controller.cs
+          projectPath: Assets\Scripts\marble_center_controller.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: c58c7c5fcb2c8869bc9698f8927dc1aa0b903d74
+        mergeA: 
+        mergeB: 
+        authorName: Jonathon Robel
+        authorEmail: jonrrobel@gmail.com
+        commitEmail: jonrrobel@gmail.com
+        commitName: Jonathon Robel
+        summary: Camera that follows marble implemented
+        description: 
+        timeString: 2023-02-03T23:59:58.000-07:00
+        commitTimeString: 2023-02-03T23:59:58.000-07:00
+        changes:
+        - path: Assets\Materials\mat_marble.mat
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\mat_marble.mat
+          projectPath: Assets\Materials\mat_marble.mat
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts.meta
+          projectPath: Assets\Scripts.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\CameraScript.cs
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\CameraScript.cs
+          projectPath: Assets\Scripts\CameraScript.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\CameraScript.cs.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\CameraScript.cs.meta
+          projectPath: Assets\Scripts\CameraScript.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\marble_center_controller.cs
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\marble_center_controller.cs
+          projectPath: Assets\Scripts\marble_center_controller.cs
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\marble_center_controller.cs.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scripts\marble_center_controller.cs.meta
+          projectPath: Assets\Scripts\marble_center_controller.cs.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - commitID: 1625a3986ffc3c65895a8fd70c640e53e3fb71f5
+        mergeA: 
+        mergeB: 
+        authorName: Jonathon Robel
+        authorEmail: jonrrobel@gmail.com
+        commitEmail: jonrrobel@gmail.com
+        commitName: Jonathon Robel
+        summary: Added custom marble texture
+        description: 
+        timeString: 2023-02-03T17:18:30.000-07:00
+        commitTimeString: 2023-02-03T17:18:30.000-07:00
+        changes:
+        - path: Assets\Textures.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures.meta
+          projectPath: Assets\Textures.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Textures\txt_marble.kra
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.kra
+          projectPath: Assets\Textures\txt_marble.kra
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Textures\txt_marble.kra.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.kra.meta
+          projectPath: Assets\Textures\txt_marble.kra.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Textures\txt_marble.kra~
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.kra~
+          projectPath: Assets\Textures\txt_marble.kra~
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Textures\txt_marble.png
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.png
+          projectPath: Assets\Textures\txt_marble.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Textures\txt_marble.png.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.png.meta
+          projectPath: Assets\Textures\txt_marble.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Textures\txt_marble.png~
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Textures\txt_marble.png~
+          projectPath: Assets\Textures\txt_marble.png~
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2021.dwlt
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\UserSettings\Layouts\default-2021.dwlt
+          projectPath: UserSettings\Layouts\default-2021.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: e45b5ca7865f8cf0313515f06c09558cb2db6dd9
+        mergeA: 
+        mergeB: 
+        authorName: Jonathon Robel
+        authorEmail: jonrrobel@gmail.com
+        commitEmail: jonrrobel@gmail.com
+        commitName: Jonathon Robel
+        summary: Changed marble color
+        description: 
+        timeString: 2023-02-03T16:34:58.000-07:00
+        commitTimeString: 2023-02-03T16:34:58.000-07:00
+        changes:
+        - path: Assets\Materials\mat_marble.mat
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\mat_marble.mat
+          projectPath: Assets\Materials\mat_marble.mat
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 2b683e22b4986fe672d8841871aa6e2c8174fdf8
+        mergeA: 
+        mergeB: 
+        authorName: Jonathon Robel
+        authorEmail: jonrrobel@gmail.com
+        commitEmail: jonrrobel@gmail.com
+        commitName: Jonathon Robel
+        summary: Ball and some walls; testing physics
+        description: 
+        timeString: 2023-02-03T16:10:06.000-07:00
+        commitTimeString: 2023-02-03T16:10:06.000-07:00
+        changes:
+        - path: Assets\Materials.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials.meta
+          projectPath: Assets\Materials.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Materials\mat_marble.mat
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\mat_marble.mat
+          projectPath: Assets\Materials\mat_marble.mat
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Materials\mat_marble.mat.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\mat_marble.mat.meta
+          projectPath: Assets\Materials\mat_marble.mat.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Materials\pmat_marble.physicMaterial
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\pmat_marble.physicMaterial
+          projectPath: Assets\Materials\pmat_marble.physicMaterial
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Materials\pmat_marble.physicMaterial.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Materials\pmat_marble.physicMaterial.meta
+          projectPath: Assets\Materials\pmat_marble.physicMaterial.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Plugins.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Plugins.meta
+          projectPath: Assets\Plugins.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes.meta
+          projectPath: Assets\Scenes.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\SampleScene.unity.meta
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\Scenes\SampleScene.unity.meta
+          projectPath: Assets\Scenes\SampleScene.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\manifest.json
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Packages\manifest.json
+          projectPath: Packages\manifest.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Packages\packages-lock.json
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Packages\packages-lock.json
+          projectPath: Packages\packages-lock.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\AudioManager.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\AudioManager.asset
+          projectPath: ProjectSettings\AudioManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ClusterInputManager.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\ClusterInputManager.asset
+          projectPath: ProjectSettings\ClusterInputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\DynamicsManager.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\DynamicsManager.asset
+          projectPath: ProjectSettings\DynamicsManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorBuildSettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\EditorBuildSettings.asset
+          projectPath: ProjectSettings\EditorBuildSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\EditorSettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\EditorSettings.asset
+          projectPath: ProjectSettings\EditorSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\GraphicsSettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\GraphicsSettings.asset
+          projectPath: ProjectSettings\GraphicsSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\InputManager.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\InputManager.asset
+          projectPath: ProjectSettings\InputManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\MemorySettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\MemorySettings.asset
+          projectPath: ProjectSettings\MemorySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\NavMeshAreas.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\NavMeshAreas.asset
+          projectPath: ProjectSettings\NavMeshAreas.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\PackageManagerSettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\PackageManagerSettings.asset
+          projectPath: ProjectSettings\PackageManagerSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+          projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\Physics2DSettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\Physics2DSettings.asset
+          projectPath: ProjectSettings\Physics2DSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\PresetManager.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\PresetManager.asset
+          projectPath: ProjectSettings\PresetManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectSettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\ProjectSettings.asset
+          projectPath: ProjectSettings\ProjectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\ProjectVersion.txt
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\ProjectVersion.txt
+          projectPath: ProjectSettings\ProjectVersion.txt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\QualitySettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\QualitySettings.asset
+          projectPath: ProjectSettings\QualitySettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\SceneTemplateSettings.json
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\SceneTemplateSettings.json
+          projectPath: ProjectSettings\SceneTemplateSettings.json
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\TimeManager.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\TimeManager.asset
+          projectPath: ProjectSettings\TimeManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\UnityConnectSettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\UnityConnectSettings.asset
+          projectPath: ProjectSettings\UnityConnectSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\VFXManager.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\VFXManager.asset
+          projectPath: ProjectSettings\VFXManager.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\VersionControlSettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\VersionControlSettings.asset
+          projectPath: ProjectSettings\VersionControlSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\XRSettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\XRSettings.asset
+          projectPath: ProjectSettings\XRSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: ProjectSettings\boot.config
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\ProjectSettings\boot.config
+          projectPath: ProjectSettings\boot.config
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\EditorUserSettings.asset
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\UserSettings\EditorUserSettings.asset
+          projectPath: UserSettings\EditorUserSettings.asset
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2021.dwlt
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\UserSettings\Layouts\default-2021.dwlt
+          projectPath: UserSettings\Layouts\default-2021.dwlt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Search.settings
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\UserSettings\Search.settings
+          projectPath: UserSettings\Search.settings
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
       - commitID: 6ee1535ffbb43f94d9f459e639c130cfb63ea4d9
         mergeA: 
         mergeB: 
@@ -580,19 +1564,19 @@ MonoBehaviour:
         commitTimeString: 2023-02-03T14:14:10.000-07:00
         changes:
         - path: .gitattributes
-          fullPath: C:\Users\jrrob\Marble Madness\.gitattributes
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\.gitattributes
           projectPath: .gitattributes
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: .gitignore
-          fullPath: C:\Users\jrrob\Marble Madness\.gitignore
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\.gitignore
           projectPath: .gitignore
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
         - path: Assets\.gitignore
-          fullPath: C:\Users\jrrob\Marble Madness\Assets\.gitignore
+          fullPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester Project\marble-madness\Assets\.gitignore
           projectPath: Assets\.gitignore
           originalPath: 
           indexStatus: 4
@@ -723,27 +1707,27 @@ MonoBehaviour:
   hasRemote: 1
   currentRemoteName: origin
   currentBranch: master
-  currentRemoteUrl: https://github.com/jrjonjonjimmyjimjim/marble-madness.git
+  currentRemoteUrl: https://github.com/jrjonjonjimmyjimjim/marble-madness
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 0
+  hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
     m_Image: {fileID: 0}
     m_Tooltip: Active branch
   currentRemoteUrlContent:
-    m_Text: https://github.com/jrjonjonjimmyjimjim/marble-madness.git
+    m_Text: https://github.com/jrjonjonjimmyjimjim/marble-madness
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-02-03T16:35:09.431-07:00
+    updatedTimeString: 2023-02-08T11:48:47.749-07:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-02-03T16:41:54.207-07:00
+    updatedTimeString: 2023-02-08T11:49:06.797-07:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-02-03T16:41:54.199-07:00
+    updatedTimeString: 2023-02-08T11:52:12.065-07:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -782,14 +1766,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 634
-    width: 1465
-    height: 365
+    y: 505.6
+    width: 1171.8
+    height: 277.4
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -815,14 +1799,15 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\jrrob\Marble Madness
+  m_LastProjectPath: C:\Users\jkohl\Documents\Homework\Game Development\Semester
+    Project\marble-madness
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a8570000
-    m_LastClickedID: 22440
-    m_ExpandedIDs: 00000000a857000000ca9a3bffffff7f
+    m_SelectedIDs: d47d0000
+    m_LastClickedID: 32212
+    m_ExpandedIDs: 00000000d47d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -850,7 +1835,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a8570000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -877,7 +1862,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -922,14 +1907,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1466
-    y: 73
-    width: 453
-    height: 926
+    x: 1172.8
+    y: 72
+    width: 362.19995
+    height: 711
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -963,14 +1948,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 73
-    width: 362
-    height: 540
+    y: 72
+    width: 289.4
+    height: 412.6
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -978,9 +1963,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d0570000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 38fbffff7a570000
+      m_ExpandedIDs: 6acdffff52d5ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1020,14 +2005,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 363
-    y: 73
-    width: 1101
-    height: 540
+    x: 290.4
+    y: 72
+    width: 880.4
+    height: 412.6
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1038,7 +2023,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -101, y: -26}
+      snapOffsetDelta: {x: -99.20001, y: -26}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -1262,9 +2247,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 50, z: 0}
+    m_Target: {x: 6.763053, y: 18.272383, z: 0.7453845}
     speed: 2
-    m_Value: {x: 0, y: 50, z: 0}
+    m_Value: {x: 6.763053, y: 18.272383, z: 0.7453845}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1303,7 +2288,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1311,13 +2296,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.23965213, y: 0.49652737, z: -0.14482865, w: -0.8216164}
+    m_Target: {x: -0.44052565, y: 0.40332142, z: -0.23136015, w: -0.7679501}
     speed: 2
-    m_Value: {x: 0.23965089, y: -0.49652484, z: 0.14482792, w: 0.8216185}
+    m_Value: {x: -0.44052434, y: 0.40332022, z: -0.23135947, w: -0.76794785}
   m_Size:
-    m_Target: 1.3826418
+    m_Target: 2.054737
     speed: 2
-    m_Value: 1.3826418
+    m_Value: 2.054737
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1358,14 +2343,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 363
-    y: 73
-    width: 1101
-    height: 540
+    x: 290.4
+    y: 72
+    width: 880.4
+    height: 412.6
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1376,7 +2361,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1101, y: 519}
+  m_TargetSize: {x: 880.4, y: 391.6}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1391,10 +2376,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -550.5
-    m_HBaseRangeMax: 550.5
-    m_VBaseRangeMin: -259.5
-    m_VBaseRangeMax: 259.5
+    m_HBaseRangeMin: -176.08
+    m_HBaseRangeMax: 176.08
+    m_VBaseRangeMin: -78.32
+    m_VBaseRangeMax: 78.32
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1412,23 +2397,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1101
-      height: 519
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 550.5, y: 259.5}
+      width: 880.4
+      height: 391.6
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 440.2, y: 195.8}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -550.5
-      y: -259.5
-      width: 1101
-      height: 519
+      x: -220.1
+      y: -97.9
+      width: 440.2
+      height: 195.8
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1101, y: 540}
+  m_defaultScale: 2
+  m_LastWindowPixelSize: {x: 2201, y: 1031.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1450,7 +2435,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
