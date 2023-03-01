@@ -46,11 +46,9 @@ public class SettingsMenu : MonoBehaviour
             .Select(resolution => $"{resolution.width} x {resolution.height} @ {resolution.refreshRate}Hz")
             .ToList()
         );
+
         resolutionDropdown.value = _selectedResolution = 0;
         resolutionDropdown.RefreshShownValue();
-
-        // Set the quality dropdown to the current quality
-        ApplyGraphics();
     }
 
     /// <summary>
