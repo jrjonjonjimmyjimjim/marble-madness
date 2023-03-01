@@ -5,9 +5,9 @@ using UnityEngine;
 public class marble_center_controller : MonoBehaviour
 {
     public Transform marbleSphere;
-    public float pLerp = .02f;
+    public float pLerp;
     public Vector2 turn;
-    public float sensitivity = .5f;
+    public float sensitivity;
 
     // Update is called once per frame
     void Update()
