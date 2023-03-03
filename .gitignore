@@ -48,5 +48,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 UserSettings/
-
 mono_crash.*
+.vsconfig
+.idea/
+.vscode/
