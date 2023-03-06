@@ -29,6 +29,7 @@ namespace Menus
 
         public GameObject settingsPanel;
         private float _currentVolume;
+        private int _qualityIndex;
         private Resolution[] _resolutions;
         private int _selectedResolution;
 
@@ -84,7 +85,7 @@ namespace Menus
         /// </summary>
         public void ChangeQuality()
         {
-            QualitySettings.SetQualityLevel(qualityDropdown.value);
+            _qualityIndex = qualityDropdown.value;
         }
 
         /// <summary>
@@ -92,6 +93,7 @@ namespace Menus
         /// </summary>
         public void ApplyGraphics()
         {
+            QualitySettings.SetQualityLevel(_qualityIndex);
             Screen.SetResolution(_resolutions[_selectedResolution].width, _resolutions[_selectedResolution].height,
                 fullscreenTog.isOn);
         }
