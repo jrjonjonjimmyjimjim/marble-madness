@@ -33,6 +33,9 @@ public class MarbleSphereController : MonoBehaviour
     /// </summary>
     private void Update()
     {
+        // If the game is paused, then don't give the user the ability to move the ball
+        if (PauseMenu.IsPaused) return;
+
         if (Input.GetMouseButtonDown(0))
         {
             var mousePos = Input.mousePosition;

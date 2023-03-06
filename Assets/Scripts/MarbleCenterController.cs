@@ -15,6 +15,9 @@ public class MarbleCenterController : MonoBehaviour
     /// </summary>
     private void Update()
     {
+        // If the game is paused, then don't allow the user to rotate the camera
+        if (PauseMenu.IsPaused) return;
+
         transform.position = Vector3.Lerp(transform.position, marbleSphere.position, pLerp);
         if (Input.GetMouseButton(1))
         {

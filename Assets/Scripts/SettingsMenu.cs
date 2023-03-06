@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using TMPro;
@@ -23,12 +22,13 @@ public class SettingsMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public Slider volumeSlider;
     public TextMeshProUGUI volumeText;
-    private float _currentVolume;
 
     public TMP_Dropdown resolutionDropdown;
+
+    public GameObject settingsPanel;
+    private float _currentVolume;
     private Resolution[] _resolutions;
     private int _selectedResolution;
-
 
     /// <summary>
     ///     On start, adjust the volume of the game to whatever the value of the slider is,
@@ -46,9 +46,15 @@ public class SettingsMenu : MonoBehaviour
             .Select(resolution => $"{resolution.width} x {resolution.height} @ {resolution.refreshRate}Hz")
             .ToList()
         );
-
-        resolutionDropdown.value = _selectedResolution = 0;
         resolutionDropdown.RefreshShownValue();
+    }
+
+    /// <summary>
+    ///     Give the player the option to click escape to unfocus the settings menu
+    /// </summary>
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) settingsPanel.SetActive(false);
     }
 
     /// <summary>
@@ -59,7 +65,7 @@ public class SettingsMenu : MonoBehaviour
     public void AdjustVolume(float value)
     {
         volumeText.text = value.ToString(CultureInfo.CurrentCulture);
-        audioMixer.SetFloat("Volume", value);
+        // audioMixer.SetFloat("Volume", value);
     }
 
     /// <summary>

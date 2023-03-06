@@ -11,9 +11,9 @@ public class MenuManager : MonoBehaviour
     /// <summary>
     ///     Start the game based on some starting scene (defined in the build settings)
     /// </summary>
-    public void StartGame()
+    public void ToLevelSelect()
     {
-        SceneManager.LoadScene(gameStartScene);
+        SceneManager.LoadScene("LevelSelect");
     }
 
     /// <summary>
