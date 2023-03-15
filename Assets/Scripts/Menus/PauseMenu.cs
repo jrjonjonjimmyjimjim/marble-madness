@@ -41,6 +41,7 @@ namespace Menus
         public void ShowMenu()
         {
             Time.timeScale = 1f;
+            TogglePause();
             SceneManager.LoadScene("MainMenu");
         }
 

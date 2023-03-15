@@ -21,7 +21,7 @@ public class PlayMusic : MonoBehaviour
         }
         else if (GameManager.gameMode == GameMode.Time)
         {
-            backgroundMusic = (AudioClip)Resources.Load("Sounds/Background/Time");
+            backgroundMusic = (AudioClip)Resources.Load("Sounds/Background/Time Attack");
         }
         else if (GameManager.gameMode == GameMode.Survival)
         {
