@@ -74,6 +74,7 @@ namespace GameLogic
 
             if (Input.GetButton("Fire2"))
             {
+                // TODO: We may want powerups to freeze motion first, then add force.
                 switch (currPowerup) {
                     case Powerup.None:
                         break;

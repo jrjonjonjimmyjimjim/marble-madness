@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marbleSphereController: {fileID: 1941122280}
-  powerupType: 1
+  powerupType: 2
 --- !u!65 &945704716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -937,7 +937,7 @@ MonoBehaviour:
   maxAngularVelocity: 20
   jumpForce: 2500
   superjumpForce: 5000
-  superspeedForce: 5
+  superspeedForce: 10000
   rb: {fileID: 1941122279}
   gameCamera: {fileID: 963194228}
   currPowerup: 1
