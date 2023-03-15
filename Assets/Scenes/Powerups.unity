@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.41227058, g: 0.48923618, b: 0.60328966, a: 1}
+  m_IndirectSpecularColor: {r: 0.41227594, g: 0.48922873, b: 0.60328513, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -824,8 +824,11 @@ MonoBehaviour:
   torque: 5
   maxAngularVelocity: 20
   jumpForce: 2500
+  superjumpForce: 5000
+  superspeedForce: 5
   rb: {fileID: 1941122279}
   gameCamera: {fileID: 963194228}
+  currPowerup: 0
 --- !u!1 &1982773071
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,13 +7,23 @@ namespace GameLogic
     ///     Controller class for the marble
     ///     Movement logic and other attributes are defined here
     /// </summary>
+
+    public enum Powerup {
+        None,
+        Superjump,
+        Superspeed
+    };
+
     public class MarbleSphereController : MonoBehaviour
     {
         public float torque;
         public float maxAngularVelocity;
         public float jumpForce;
+        public float superjumpForce;
+        public float superspeedForce;
         public Rigidbody rb;
         public Transform gameCamera;
+        public Powerup currPowerup;
         private bool _canJump;
 
         private float _mouseXStart;
@@ -28,6 +38,7 @@ namespace GameLogic
         {
             rb.maxAngularVelocity = maxAngularVelocity;
             _canJump = false;
+            currPowerup = Powerup.Superjump;
         }
 
         /// <summary>
@@ -61,6 +72,24 @@ namespace GameLogic
                     _canJump = false;
                     rb.AddForce(new Vector3(0, jumpForce, 0));
                 }
+
+            if (Input.GetButton("Fire2"))
+            {
+                switch (currPowerup) {
+                    case Powerup.None:
+                        break;
+                    case Powerup.Superjump:
+                        rb.AddForce(new Vector3(0, superjumpForce, 0));
+                        currPowerup = Powerup.None;
+                        break;
+                    case Powerup.Superspeed:
+                        rb.AddForce(gameCamera.forward * superspeedForce);
+                        currPowerup = Powerup.None;
+                        break;
+                }
+            }
+
+                
         }
 
         /// <summary>
