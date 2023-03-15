@@ -17,7 +17,7 @@ namespace Menus
         /// </summary>
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene("MainMenu");
+            if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene("GameModeSelect");
         }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace Menus
         /// </summary>
         public void GoBack()
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("GameModeSelect");
         }
     }
 }

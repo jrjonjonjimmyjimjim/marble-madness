@@ -13,9 +13,9 @@ namespace Menus
         /// <summary>
         ///     Start the game based on some starting scene (defined in the build settings)
         /// </summary>
-        public void ToLevelSelect()
+        public void ToGameModeSelect()
         {
-            SceneManager.LoadScene("LevelSelect");
+            SceneManager.LoadScene("GameModeSelect");
         }
 
         /// <summary>
