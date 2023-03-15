@@ -38,7 +38,6 @@ namespace GameLogic
         {
             rb.maxAngularVelocity = maxAngularVelocity;
             _canJump = false;
-            currPowerup = Powerup.Superjump;
         }
 
         /// <summary>
