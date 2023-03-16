@@ -1,4 +1,5 @@
 using Menus;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameLogic
@@ -19,6 +20,11 @@ namespace GameLogic
         private float _mouseXStart;
         private float _mouseYStart;
 
+        private AudioClip jumpSound;
+        private AudioSource _rolling;
+        private AudioSource _impact;
+        private AudioSource[] _audio;
+
         /// <summary>
         ///     Set default parameters for the marble such as:
         ///     - A maximum angular velocity
@@ -28,6 +34,10 @@ namespace GameLogic
         {
             rb.maxAngularVelocity = maxAngularVelocity;
             _canJump = false;
+            _audio = GetComponents<AudioSource>();
+            _rolling = _audio[0];
+            _impact = _audio[1];
+            jumpSound = (AudioClip)Resources.Load("Sounds/SFX/Jump");
         }
 
         /// <summary>
@@ -60,7 +70,26 @@ namespace GameLogic
                 {
                     _canJump = false;
                     rb.AddForce(new Vector3(0, jumpForce, 0));
+                    _rolling.Stop();
+                    _rolling.volume = 1;
+                    _rolling.pitch = 1;
+                    _rolling.PlayOneShot(jumpSound, 1);
                 }
+
+            if(rb.angularVelocity.magnitude > 0 && _canJump)
+            {
+                float noise = rb.angularVelocity.magnitude / (maxAngularVelocity);
+                if(noise > 1)
+                {
+                    noise = 1;
+                }
+                _rolling.volume = noise/2;
+                _rolling.pitch = 0.2f;
+                if (!_rolling.isPlaying)
+                {
+                    _rolling.Play();
+                }
+            }
         }
 
         /// <summary>
@@ -68,9 +97,12 @@ namespace GameLogic
         ///     jump
         /// </summary>
         /// <param name="collision"></param>
-        private void OnCollisionEnter(Collision collision)
-        {
-            _canJump = true;
+        private void OnCollisionEnter(Collision collision){
+            _impact.volume = rb.velocity.y / 15;
+            _impact.Play();
+            _canJump = true;            
         }
+
+        //private void OnCollisionExit(Collision collision) { _canJump = false; }
     }
 }
