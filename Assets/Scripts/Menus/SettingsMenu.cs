@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
+﻿using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -17,36 +14,11 @@ namespace Menus
     {
         public Toggle fullscreenTog;
         public TMP_Dropdown qualityDropdown;
-
-        // TODO: Implement the audio mixer or whatever to make the sound actually
-        // change
-        // Right now, I think only the slider bar reacts, but doesn't actually do
-        // anything
-        public AudioMixer audioMixer;
+        public AudioMixer audioMixer; // TODO connect this
         public Slider volumeSlider;
         public TextMeshProUGUI volumeText;
-
         public TMP_Dropdown resolutionDropdown;
-
         public GameObject settingsPanel;
-        private float _currentVolume;
-        private int _qualityIndex;
-        private Resolution[] _resolutions;
-        private int _selectedResolution;
-
-        public static SettingsMenu Instance;
-
-        private void Awake()
-        {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
 
         /// <summary>
         ///     On start, adjust the volume of the game to whatever the value of the slider is,
@@ -54,47 +26,9 @@ namespace Menus
         /// </summary>
         private void Start()
         {
-            if (SettingsMenu.Instance == null) return;
-            
             UpdateVolume();
             UpdateResolutions();
             UpdateQuality();
-        }
-
-        private void UpdateVolume()
-        {
-            AdjustVolume(volumeSlider.value);
-        }
-
-        private void UpdateResolutions()
-        {
-            // Get the resolutions from the screen and add them to the dropdown
-            _resolutions = Screen.resolutions;
-            Array.Reverse(_resolutions);
-            resolutionDropdown.ClearOptions();
-            resolutionDropdown.AddOptions(_resolutions
-                .Select(resolution => $"{resolution.width} x {resolution.height} @ {resolution.refreshRate}Hz")
-                .ToList()
-            );
-            resolutionDropdown.RefreshShownValue();
-
-            // Set the current value of the dropdown to whatever resolution we currently have
-            for (var i = 0; i < _resolutions.Length; i++)
-            {
-                if (Screen.currentResolution.width == _resolutions[i].width &&
-                    Screen.currentResolution.height == _resolutions[i].height &&
-                    Screen.currentResolution.refreshRate == _resolutions[i].refreshRate)
-                {
-                    resolutionDropdown.value = i;
-                }
-            }
-        }
-
-        private void UpdateQuality()
-        {
-            // Set the values in the quality dropdown
-            var qualityOptions = new List<string> { "Low", "Medium", "High", "Very High", "Ultra" };
-            qualityDropdown.AddOptions(qualityOptions);
         }
 
         /// <summary>
@@ -106,6 +40,39 @@ namespace Menus
         }
 
         /// <summary>
+        ///     Adjust the slider when the settings menu is created
+        /// </summary>
+        private void UpdateVolume()
+        {
+            AdjustVolume(SettingsMenuOptions.instance.CurrentVolume);
+        }
+
+        /// <summary>
+        ///     Fill in the resolution dropdown box
+        /// </summary>
+        private void UpdateResolutions()
+        {
+            // Get the resolutions from the screen and add them to the dropdown
+            resolutionDropdown.ClearOptions();
+            resolutionDropdown.AddOptions(
+                SettingsMenuOptions.instance.ResolutionsString
+            );
+
+            // Set the current value of the dropdown to whatever resolution we currently have
+            resolutionDropdown.value = SettingsMenuOptions.instance.SelectedResolution;
+        }
+
+        /// <summary>
+        ///     Fill in the quality dropdown box
+        /// </summary>
+        private void UpdateQuality()
+        {
+            // Set the values in the quality dropdown
+            qualityDropdown.AddOptions(SettingsMenuOptions.instance.QualityOptions);
+            qualityDropdown.value = SettingsMenuOptions.instance.QualityIndex;
+        }
+
+        /// <summary>
         ///     Tweak the text next to the volume slider as the value changes, and
         ///     change the volume of the audio mixer
         /// </summary>
@@ -113,7 +80,7 @@ namespace Menus
         public void AdjustVolume(float value)
         {
             volumeText.text = value.ToString(CultureInfo.CurrentCulture);
-            // audioMixer.SetFloat("Volume", value);
+            SettingsMenuOptions.instance.CurrentVolume = volumeSlider.value = value;
         }
 
         /// <summary>
@@ -122,15 +89,15 @@ namespace Menus
         /// <param name="value"></param>
         public void ChangeSelectedResolution(int value)
         {
-            _selectedResolution = value;
+            SettingsMenuOptions.instance.SelectedResolution = value;
         }
 
         /// <summary>
         ///     Change the quality of the textures based on the selected value
         /// </summary>
-        public void ChangeQuality()
+        public void ChangeQuality(int value)
         {
-            _qualityIndex = qualityDropdown.value;
+            SettingsMenuOptions.instance.QualityIndex = value;
         }
 
         /// <summary>
@@ -138,12 +105,14 @@ namespace Menus
         /// </summary>
         public void ApplyGraphics()
         {
-            QualitySettings.SetQualityLevel(_qualityIndex);
+            QualitySettings.SetQualityLevel(SettingsMenuOptions.instance.QualityIndex);
             Screen.SetResolution(
-                _resolutions[_selectedResolution].width,
-                _resolutions[_selectedResolution].height,
+                SettingsMenuOptions.instance.Resolutions[SettingsMenuOptions.instance.SelectedResolution].width,
+                SettingsMenuOptions.instance.Resolutions[SettingsMenuOptions.instance.SelectedResolution].height,
                 fullscreenTog.isOn
             );
+            Application.targetFrameRate = SettingsMenuOptions.instance
+                .Resolutions[SettingsMenuOptions.instance.SelectedResolution].refreshRate;
         }
     }
 }
