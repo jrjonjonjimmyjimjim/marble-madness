@@ -19,7 +19,7 @@ namespace Camera
         private void Update()
         {
             // If the game is paused, then don't allow the user to rotate the camera
-            if (PauseMenu.IsPaused) return;
+            if (PauseMenu.isPaused) return;
 
             transform.position = Vector3.Lerp(transform.position, marbleSphere.position, pLerp);
             if (Input.GetMouseButton(1))

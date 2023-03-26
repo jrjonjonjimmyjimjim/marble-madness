@@ -911,6 +911,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3418448319834250611, guid: 5cab90942de91c548a1cdd8265cd81d4, type: 3}
+      propertyPath: m_Options.m_Options.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3418448319834250611, guid: 5cab90942de91c548a1cdd8265cd81d4, type: 3}
       propertyPath: m_Options.m_Options.Array.data[0].m_Text
       value: Very Low
       objectReference: {fileID: 0}
