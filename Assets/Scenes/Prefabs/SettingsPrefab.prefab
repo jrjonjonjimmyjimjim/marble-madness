@@ -3663,6 +3663,7 @@ MonoBehaviour:
   volumeSlider: {fileID: 2377470943652168027}
   volumeText: {fileID: 2377470943940567430}
   resolutionDropdown: {fileID: 2377470943440017577}
+  settingsPanel: {fileID: 0}
 --- !u!1 &2377470944821339151
 GameObject:
   m_ObjectHideFlags: 0

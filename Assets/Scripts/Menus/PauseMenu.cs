@@ -24,13 +24,7 @@ namespace Menus
             Time.timeScale = IsPaused ? 0f : 1f;
 
             // Small quality of life that allows you to escape out of the settings menu
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                if (settingsMenu.activeSelf)
-                    settingsMenu.SetActive(false);
-                else
-                    TogglePause();
-            }
+            if (Input.GetKeyDown(KeyCode.Escape)) TogglePause();
         }
 
         /// <summary>
@@ -47,6 +41,7 @@ namespace Menus
         public void ShowMenu()
         {
             Time.timeScale = 1f;
+            TogglePause();
             SceneManager.LoadScene("MainMenu");
         }
 
