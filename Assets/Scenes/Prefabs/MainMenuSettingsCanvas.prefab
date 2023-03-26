@@ -132,6 +132,54 @@ PrefabInstance:
       propertyPath: m_Name
       value: SettingsPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 2377470943440017577, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6432903143257092891}
+    - target: {fileID: 2377470943440017577, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeSelectedResolution
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470943440017577, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menus.SettingsMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470943652168027, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470943652168027, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6432903143257092891}
+    - target: {fileID: 2377470943652168027, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AdjustVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470943652168027, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menus.SettingsMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470943652168027, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470944182141464, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470944366645571, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470944366645571, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470944816395537, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2377470944859455627, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -143,6 +191,34 @@ PrefabInstance:
     - target: {fileID: 2377470944859455627, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Menus.SettingsMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470944887140292, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470944887140292, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6432903143257092891}
+    - target: {fileID: 2377470944887140292, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeQuality
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470944887140292, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menus.SettingsMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470945438428307, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470945438428307, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377470945438428307, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4470510909217073771, guid: f8ff2a68b7b11b1469d2cdcd04b4f012, type: 3}
       propertyPath: m_Pivot.x

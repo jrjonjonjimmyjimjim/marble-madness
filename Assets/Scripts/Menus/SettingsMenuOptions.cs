@@ -20,6 +20,9 @@ namespace Menus
 
         /// <summary>
         ///     Enforce a singleton pattern for the settings menu
+        ///     <see>
+        ///         <cref>https://learn.unity.com/tutorial/implement-data-persistence-between-scenes#634f8281edbc2a65c86270cb</cref>
+        ///     </see>
         /// </summary>
         private void Awake()
         {
@@ -48,8 +51,8 @@ namespace Menus
             Screen.SetResolution(Resolutions[SelectedResolution].width, Resolutions[SelectedResolution].height, true);
 
             // Set all quality options
-            QualityOptions = new List<string> { "Low", "Medium", "High", "Very High", "Ultra" };
-            QualityIndex = QualityOptions.Count - 1;
+            QualityOptions = new List<string> { "Ultra", "Very High", "High", "Medium", "Low" };
+            QualityIndex = 0;
 
             // Set the default volume to 100
             CurrentVolume = 100;
