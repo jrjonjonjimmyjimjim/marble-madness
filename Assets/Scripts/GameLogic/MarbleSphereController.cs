@@ -1,5 +1,4 @@
 using Menus;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameLogic
@@ -10,20 +9,21 @@ namespace GameLogic
     /// </summary>
     public class MarbleSphereController : MonoBehaviour
     {
+        public Transform gameCamera;
         public float torque;
         public float maxAngularVelocity;
         public float jumpForce;
         public Rigidbody rb;
-        public Transform gameCamera;
+
+        private AudioSource[] _audio;
+
         private bool _canJump;
+        private AudioSource _impact;
+        private AudioClip _jumpSound;
 
         private float _mouseXStart;
         private float _mouseYStart;
-
-        private AudioClip jumpSound;
         private AudioSource _rolling;
-        private AudioSource _impact;
-        private AudioSource[] _audio;
 
         /// <summary>
         ///     Set default parameters for the marble such as:
@@ -37,17 +37,18 @@ namespace GameLogic
             _audio = GetComponents<AudioSource>();
             _rolling = _audio[0];
             _impact = _audio[1];
-            jumpSound = (AudioClip)Resources.Load("Sounds/SFX/Jump");
+            _jumpSound = (AudioClip)Resources.Load("Sounds/SFX/Jump");
         }
 
         /// <summary>
         ///     Give players the ability to flick the marble by clicking and dragging the left mouse button,
-        ///     as well as the ability to jump, provided that they are on the ground
+        ///     as well as the ability to jump, provided that they are on the ground.
+        ///     Define noise attributes when the marble is moving.
         /// </summary>
         private void Update()
         {
             // If the game is paused, then don't give the user the ability to move the ball
-            if (PauseMenu.IsPaused) return;
+            if (PauseMenu.isPaused) return;
 
             if (Input.GetMouseButtonDown(0))
             {
@@ -65,16 +66,16 @@ namespace GameLogic
                 rb.AddTorque(gameCamera.right * (torque * forwardAmount));
             }
 
-            if (Input.GetButton("Jump"))
-                if (_canJump)
-                {
-                    _canJump = false;
-                    rb.AddForce(new Vector3(0, jumpForce, 0));
-                    _rolling.Stop();
-                    _rolling.volume = 1;
-                    _rolling.pitch = 1;
-                    _rolling.PlayOneShot(jumpSound, 1);
-                }
+            // Play a jumping sound and pause the rolling sound while the marble is jumping
+            if (Input.GetButton("Jump") && _canJump)
+            {
+                _canJump = false;
+                rb.AddForce(new Vector3(0, jumpForce, 0));
+                _rolling.Stop();
+                _rolling.volume = 1;
+                _rolling.pitch = 1;
+                _rolling.PlayOneShot(_jumpSound, 1);
+            }
 
             if(rb.angularVelocity.magnitude > 0 && _canJump)
             {
@@ -111,7 +112,5 @@ namespace GameLogic
         {
             _canJump = true;
         }
-
-        //private void OnCollisionExit(Collision collision) { _canJump = false; }
     }
 }

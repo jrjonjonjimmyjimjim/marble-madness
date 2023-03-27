@@ -357,7 +357,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2377470944816395541}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ChangeSelectedResolution
         m_Mode: 0
@@ -983,13 +983,13 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2377470944816395541}
-        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
-        m_MethodName: AdjustVolume
-        m_Mode: 0
+      - m_Target: {fileID: 11500000, guid: 8af0181ffbbf44bc82e5237a0103169f, type: 3}
+        m_TargetAssemblyTypeName: UnityEditor.MonoScript, UnityEditor.CoreModule
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3233,7 +3233,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2377470944816395541}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetFullscreen
         m_Mode: 6
@@ -3573,7 +3573,6 @@ GameObject:
   - component: {fileID: 2377470944816395538}
   - component: {fileID: 2377470944816395540}
   - component: {fileID: 2377470944816395539}
-  - component: {fileID: 2377470944816395541}
   m_Layer: 5
   m_Name: SettingsPanel
   m_TagString: Untagged
@@ -3645,25 +3644,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2377470944816395541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2377470944816395537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8af0181ffbbf44bc82e5237a0103169f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fullscreenTog: {fileID: 2377470944659008748}
-  qualityDropdown: {fileID: 2377470944887140292}
-  audioMixer: {fileID: 24100000, guid: f10dbbe6ff0e51749aaea44a8b50071a, type: 2}
-  volumeSlider: {fileID: 2377470943652168027}
-  volumeText: {fileID: 2377470943940567430}
-  resolutionDropdown: {fileID: 2377470943440017577}
-  settingsPanel: {fileID: 0}
 --- !u!1 &2377470944821339151
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,7 +3804,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2377470944816395541}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ApplyGraphics
         m_Mode: 1
@@ -4058,23 +4038,11 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 5
   m_Options:
-    m_Options:
-    - m_Text: Very Low
-      m_Image: {fileID: 0}
-    - m_Text: Low
-      m_Image: {fileID: 0}
-    - m_Text: Medium
-      m_Image: {fileID: 0}
-    - m_Text: High
-      m_Image: {fileID: 0}
-    - m_Text: Very High
-      m_Image: {fileID: 0}
-    - m_Text: Ultra
-      m_Image: {fileID: 0}
+    m_Options: []
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2377470944816395541}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: ChangeQuality
         m_Mode: 1

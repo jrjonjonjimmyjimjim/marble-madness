@@ -1,34 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayMusic : MonoBehaviour
+namespace GameLogic
 {
-    private AudioClip backgroundMusic;
-    private AudioSource _audio;
-
-    // Start is called before the first frame update
-    void Start()
+    public class PlayMusic : MonoBehaviour
     {
-        _audio = GetComponent<AudioSource>();
-        if (GameManager.gameMode == GameMode.Tutorial)
-        {
-            backgroundMusic = (AudioClip)Resources.Load("Sounds/Background/Tutorial");
-        }
-        else if (GameManager.gameMode == GameMode.Level)
-        {
-            backgroundMusic = (AudioClip)Resources.Load("Sounds/Background/Level");
-        }
-        else if (GameManager.gameMode == GameMode.Time)
-        {
-            backgroundMusic = (AudioClip)Resources.Load("Sounds/Background/Time Attack");
-        }
-        else if (GameManager.gameMode == GameMode.Survival)
-        {
-            backgroundMusic = (AudioClip)Resources.Load("Sounds/Background/Survival");
-        }
-        _audio.clip = backgroundMusic;
-        _audio.Play();
-    }
+        private AudioSource _audio;
+        private AudioClip _backgroundMusic;
 
+        // Start is called before the first frame update
+        private void Start()
+        {
+            _audio = GetComponent<AudioSource>();
+            _backgroundMusic = GameModeManager.GameMode switch
+            {
+                GameMode.Tutorial => (AudioClip)Resources.Load("Sounds/Background/Tutorial"),
+                GameMode.Level => (AudioClip)Resources.Load("Sounds/Background/Level"),
+                GameMode.Time => (AudioClip)Resources.Load("Sounds/Background/Time Attack"),
+                GameMode.Survival => (AudioClip)Resources.Load("Sounds/Background/Survival"),
+                _ => _backgroundMusic
+            };
+
+            _audio.clip = _backgroundMusic;
+            _audio.Play();
+        }
+    }
 }
