@@ -10,7 +10,7 @@ namespace Menus
     /// </summary>
     public class PauseMenu : MonoBehaviour
     {
-        public static bool IsPaused;
+        public static bool isPaused;
         public GameObject pauseMenu;
         public GameObject settingsMenu;
 
@@ -20,8 +20,8 @@ namespace Menus
         /// </summary>
         private void Update()
         {
-            pauseMenu.SetActive(IsPaused);
-            Time.timeScale = IsPaused ? 0f : 1f;
+            pauseMenu.SetActive(isPaused);
+            Time.timeScale = isPaused ? 0f : 1f;
 
             // Small quality of life that allows you to escape out of the settings menu
             if (Input.GetKeyDown(KeyCode.Escape)) TogglePause();
@@ -32,7 +32,7 @@ namespace Menus
         /// </summary>
         public void TogglePause()
         {
-            IsPaused = !IsPaused;
+            isPaused = !isPaused;
         }
 
         /// <summary>

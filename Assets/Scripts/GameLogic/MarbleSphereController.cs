@@ -48,7 +48,7 @@ namespace GameLogic
         private void Update()
         {
             // If the game is paused, then don't give the user the ability to move the ball
-            if (PauseMenu.IsPaused) return;
+            if (PauseMenu.isPaused) return;
 
             if (Input.GetMouseButtonDown(0))
             {
