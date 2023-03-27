@@ -79,17 +79,19 @@ namespace GameLogic
             if(rb.angularVelocity.magnitude > 0 && _canJump)
             {
                 float noise = rb.angularVelocity.magnitude / (maxAngularVelocity);
-                if(noise > 1)
+                if(noise > 0.7)
                 {
-                    noise = 1;
+                    noise = (float)7/10;
                 }
-                _rolling.volume = noise/2;
-                _rolling.pitch = 0.2f;
+                _rolling.volume = noise;
+                _rolling.pitch = noise;
                 if (!_rolling.isPlaying)
                 {
                     _rolling.Play();
                 }
             }
+
+            _canJump = false;
         }
 
         /// <summary>
@@ -98,9 +100,16 @@ namespace GameLogic
         /// </summary>
         /// <param name="collision"></param>
         private void OnCollisionEnter(Collision collision){
-            _impact.volume = rb.velocity.y / 15;
-            _impact.Play();
-            _canJump = true;            
+            if (!_canJump)
+            {
+                _impact.volume = rb.velocity.y / 15;
+                _impact.Play();
+            }           
+        }
+
+        private void OnCollisionStay(Collision collision)
+        {
+            _canJump = true;
         }
 
         //private void OnCollisionExit(Collision collision) { _canJump = false; }
