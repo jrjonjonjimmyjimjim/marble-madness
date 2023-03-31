@@ -7,13 +7,24 @@ namespace GameLogic
     ///     Controller class for the marble
     ///     Movement logic and other attributes are defined here
     /// </summary>
+
+    public enum Powerup {
+        None,
+        Superjump,
+        Superspeed
+    };
+
     public class MarbleSphereController : MonoBehaviour
     {
         public Transform gameCamera;
         public float torque;
         public float maxAngularVelocity;
         public float jumpForce;
+        public float superjumpForce;
+        public float superspeedForce;
         public Rigidbody rb;
+        public Transform gameCamera;
+        public Powerup currPowerup;
 
         private AudioSource[] _audio;
 
@@ -84,6 +95,7 @@ namespace GameLogic
                 {
                     noise = (float)7/10;
                 }
+                
                 _rolling.volume = noise;
                 _rolling.pitch = noise;
                 if (!_rolling.isPlaying)
@@ -93,6 +105,24 @@ namespace GameLogic
             }
 
             _canJump = false;
+            
+            if (Input.GetButton("Fire2"))
+            {
+                // TODO: We may want powerups to freeze motion first, then add force.
+                switch (currPowerup) {
+                    case Powerup.None:
+                        break;
+                    case Powerup.Superjump:
+                        rb.AddForce(new Vector3(0, superjumpForce, 0));
+                        currPowerup = Powerup.None;
+                        break;
+                    case Powerup.Superspeed:
+                        rb.AddForce(gameCamera.forward * superspeedForce);
+                        currPowerup = Powerup.None;
+                        break;
+                }
+            }
+
         }
 
         /// <summary>
