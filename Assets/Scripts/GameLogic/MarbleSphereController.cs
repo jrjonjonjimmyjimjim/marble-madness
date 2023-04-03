@@ -16,7 +16,6 @@ namespace GameLogic
 
     public class MarbleSphereController : MonoBehaviour
     {
-        public Transform gameCamera;
         public float torque;
         public float maxAngularVelocity;
         public float jumpForce;
