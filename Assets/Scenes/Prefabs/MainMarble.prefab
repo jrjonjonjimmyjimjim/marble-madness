@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 8419968778395737997}
   m_Layer: 0
   m_Name: MainMarble
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 9058957960764041983}
   m_Layer: 0
   m_Name: MarbleSphere
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,11 +242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d798ce427c85383489e5f0b4d94fad02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameCamera: {fileID: 0}
   torque: 5
   maxAngularVelocity: 20
   jumpForce: 2500
   rb: {fileID: 8419968778570887157}
-  gameCamera: {fileID: 0}
 --- !u!82 &8419968778570887163
 AudioSource:
   m_ObjectHideFlags: 0
