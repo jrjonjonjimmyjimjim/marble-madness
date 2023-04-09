@@ -145,5 +145,10 @@ namespace GameLogic
                 _canJump = true;
             }
         }
+
+        public void HitPlayer(Vector3 hitDir)
+        {
+            rb.AddForce(hitDir);
+        }
     }
 }
