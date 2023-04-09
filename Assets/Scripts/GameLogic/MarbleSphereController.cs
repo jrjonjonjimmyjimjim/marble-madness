@@ -102,6 +102,10 @@ namespace GameLogic
                     _rolling.Play();
                 }
             }
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                _rolling.Stop();
+            }
             
             if (Input.GetButton("Fire2"))
             {
@@ -128,6 +132,7 @@ namespace GameLogic
         /// </summary>
         /// <param name="collision"></param>
         ///
+
 
         private void OnCollisionEnter(Collision collision){
             if (!_canJump)

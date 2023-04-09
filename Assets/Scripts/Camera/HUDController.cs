@@ -39,6 +39,16 @@ public class HUDController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GameModeManager.GameMode == GameMode.Time)
+        {
+            float timer = GameManager.timer;
+            timer -= Time.deltaTime;
+            Gameplay_Text.text = "Time: " + timer;
+            GameManager.timer = timer;
+        }
+        else if (GameModeManager.GameMode == GameMode.Survival)
+        {
+            Gameplay_Text.text = "Lives: " + GameManager.lives;
+        }
     }
 }
