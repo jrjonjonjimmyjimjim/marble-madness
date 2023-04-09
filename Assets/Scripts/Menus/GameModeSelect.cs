@@ -36,18 +36,22 @@ namespace Menus
             {
                 case "Time Attack":
                     GameModeManager.UpdateGameMode(GameMode.Time);
+                    GameManager.StartPlay(GameMode.Time);
                     SceneManager.LoadScene("Level1");
                     break;
                 case "Tutorial":
                     GameModeManager.UpdateGameMode(GameMode.Tutorial);
+                    GameManager.StartPlay(GameMode.Tutorial);
                     SceneManager.LoadScene("Tutorial");
                     break;
                 case "Level Select":
                     GameModeManager.UpdateGameMode(GameMode.Level);
+                    GameManager.StartPlay(GameMode.Level);
                     SceneManager.LoadScene("LevelSelect");
                     break;
                 case "Survival":
                     GameModeManager.UpdateGameMode(GameMode.Survival);
+                    GameManager.StartPlay(GameMode.Survival);
                     SceneManager.LoadScene("Level1");
                     break;
             }

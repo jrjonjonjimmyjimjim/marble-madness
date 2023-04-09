@@ -102,8 +102,6 @@ namespace GameLogic
                     _rolling.Play();
                 }
             }
-
-            _canJump = false;
             
             if (Input.GetButton("Fire2"))
             {
@@ -129,17 +127,18 @@ namespace GameLogic
         ///     jump
         /// </summary>
         /// <param name="collision"></param>
+        ///
+
         private void OnCollisionEnter(Collision collision){
             if (!_canJump)
             {
-                _impact.volume = rb.velocity.y / 15;
+                _impact.volume = rb.velocity.y / 10;
                 _impact.Play();
-            }           
-        }
-
-        private void OnCollisionStay(Collision collision)
-        {
-            _canJump = true;
+            }
+            if(collision.gameObject.tag == "Floor")
+            {
+                _canJump = true;
+            }
         }
     }
 }
