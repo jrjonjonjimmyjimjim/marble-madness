@@ -12,7 +12,7 @@ public class ExplodeBarrel : MonoBehaviour
 	public float upForceMin = 0.0f;
 	public float upForceMax = 0.5f;
 
-	public bool autoDestroy = true;
+	public bool autoDestroy = false;
 	public float lifeTime = 5.0f;
 
 	void Start () 

@@ -17,6 +17,8 @@ namespace GameLogic
     public class MarbleSphereController : MonoBehaviour
     {
         public float torque;
+        public int minY = -50;
+        private Vector3 spawnPoint;
         public float maxAngularVelocity;
         public float jumpForce;
         public float superjumpForce;
@@ -48,6 +50,7 @@ namespace GameLogic
             _rolling = _audio[0];
             _impact = _audio[1];
             _jumpSound = (AudioClip)Resources.Load("Sounds/SFX/Jump");
+            spawnPoint = rb.position;
         }
 
         /// <summary>
@@ -59,6 +62,11 @@ namespace GameLogic
         {
             // If the game is paused, then don't give the user the ability to move the ball
             if (PauseMenu.isPaused) return;
+
+            if(rb.position.y < minY)
+            {
+                Respawn();
+            }
 
             if (Input.GetMouseButtonDown(0))
             {
@@ -144,11 +152,23 @@ namespace GameLogic
             {
                 _canJump = true;
             }
+            else if(collision.gameObject.tag == "Obstacle")
+            {
+                GameManager.lives--;
+                Respawn();
+            }
         }
 
         public void HitPlayer(Vector3 hitDir)
         {
             rb.AddForce(hitDir);
+        }
+
+        public void Respawn()
+        {
+            rb.position = spawnPoint;
+            rb.velocity = new Vector3(0, 0, 0);
+            rb.angularVelocity = new Vector3(0, 0, 0);
         }
     }
 }

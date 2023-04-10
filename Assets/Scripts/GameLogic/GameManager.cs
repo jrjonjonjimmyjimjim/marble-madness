@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
     public static void GoToNextLevel()
     {
         level++;
+        timer += 30;
         if(level > maxLevel)
         {
             SceneManager.LoadScene("GameOver");

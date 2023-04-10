@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torque: 5
+  minY: -20
   maxAngularVelocity: 20
   jumpForce: 2500
   superjumpForce: 0
