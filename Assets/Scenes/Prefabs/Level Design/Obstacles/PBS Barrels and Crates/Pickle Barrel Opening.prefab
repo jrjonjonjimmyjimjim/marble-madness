@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.4449, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000011824329926}
   m_RootOrder: 0
@@ -52,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -108,6 +110,7 @@ GameObject:
   - component: {fileID: 33000012414495562}
   - component: {fileID: 23000010082693088}
   - component: {fileID: 64000013601097232}
+  - component: {fileID: 1556981095027822876}
   m_Layer: 0
   m_Name: Pickle Barrel Opening
   m_TagString: Untagged
@@ -125,6 +128,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4000013923378884}
   m_Father: {fileID: 0}
@@ -149,6 +153,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -193,3 +198,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 63a7e6af84e23444c815a7b126d50bff, type: 3}
+--- !u!114 &1556981095027822876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013658180320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfdbaee57b82c436d906ffa7d643cb15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explodedPrefab: {fileID: 1000011072799038, guid: c6dc50849368345e997b24862b2747c7, type: 3}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5

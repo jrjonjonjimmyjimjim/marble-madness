@@ -61,7 +61,12 @@ namespace GameLogic
         private void Update()
         {
             // If the game is paused, then don't give the user the ability to move the ball
-            if (PauseMenu.isPaused) return;
+            if (PauseMenu.isPaused)
+            {
+                _rolling.Stop();
+                return;
+            }
+
 
             if(rb.position.y < minY)
             {
@@ -110,10 +115,6 @@ namespace GameLogic
                     _rolling.Play();
                 }
             }
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                _rolling.Stop();
-            }
             
             if (Input.GetButton("Fire2"))
             {
@@ -152,7 +153,7 @@ namespace GameLogic
             {
                 _canJump = true;
             }
-            else if(collision.gameObject.tag == "Obstacle")
+            else if(collision.gameObject.tag == "Obstacle" && GameModeManager.GameMode == GameMode.Survival)
             {
                 GameManager.lives--;
                 Respawn();

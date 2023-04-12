@@ -11,6 +11,7 @@ public class HUDController : MonoBehaviour
     public TMP_Text Scene_Text;
     public TMP_Text GameMode_Text;
     public TMP_Text Gameplay_Text;
+    public TMP_Text Powerup_Text;
     
     // Start is called before the first frame update
     void Start()
@@ -39,12 +40,13 @@ public class HUDController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GameManager.CheckStatus();
         if (GameModeManager.GameMode == GameMode.Time)
         {
-            float timer = GameManager.timer;
-            timer -= Time.deltaTime;
-            Gameplay_Text.text = "Time: " + timer;
-            GameManager.timer = timer;
+            //float timer = GameManager.timer;
+            //timer -= Time.deltaTime;
+            Gameplay_Text.text = "Time: " + GameManager.timer.ToString("F2");
+            //GameManager.timer = timer;
         }
         else if (GameModeManager.GameMode == GameMode.Survival)
         {

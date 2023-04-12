@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     static int level = 1;
-    static int maxLevel = 2;
+    public static int maxLevel = 2;
     public static int lives = 5;
     public static float timer = 0;
 
@@ -18,11 +18,11 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
-    private void Update()
+    public static void CheckStatus()
     {
-        if(GameModeManager.GameMode == GameMode.Time)
+        if (GameModeManager.GameMode == GameMode.Time)
         {
-            if (timer > 0)
+            if (timer > 0.0)
             {
                 timer -= Time.deltaTime;
             }
@@ -30,9 +30,10 @@ public class GameManager : MonoBehaviour
             {
                 SceneManager.LoadScene("GameOver");
             }
-        }else if (GameModeManager.GameMode == GameMode.Survival)
+        }
+        else if (GameModeManager.GameMode == GameMode.Survival)
         {
-            if(lives <= 0)
+            if (lives <= 0)
             {
                 SceneManager.LoadScene("GameOver");
             }
@@ -41,9 +42,10 @@ public class GameManager : MonoBehaviour
 
     public static void StartPlay(GameMode mode)
     {
+        level = 1;
         if(mode == GameMode.Time)
         {
-            timer = 30;
+            timer = 5;
         }else if(mode == GameMode.Survival)
         {
             lives = 5;
@@ -53,13 +55,13 @@ public class GameManager : MonoBehaviour
     public static void GoToNextLevel()
     {
         level++;
-        timer += 30;
         if(level > maxLevel)
         {
             SceneManager.LoadScene("GameOver");
         }
         else
         {
+            timer += 30;
             SceneManager.LoadScene("Level" + level);
         }
     }

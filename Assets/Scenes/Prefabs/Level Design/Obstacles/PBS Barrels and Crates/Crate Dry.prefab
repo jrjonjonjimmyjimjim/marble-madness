@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2332548}
   - component: {fileID: 5441882}
   - component: {fileID: 6535578}
+  - component: {fileID: 1519318618314215991}
   m_Layer: 0
   m_Name: Crate Dry
-  m_TagString: Floor
+  m_TagString: Crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 119378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,3 +115,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5000002, y: 0.5000054, z: 0.49999216}
   m_Center: {x: -0.00000001490116, y: 1.5026364e-18, z: -0.000006616115}
+--- !u!114 &1519318618314215991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfdbaee57b82c436d906ffa7d643cb15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explodedPrefab: {fileID: 1000012471779828, guid: 26de71f5e5d1a4909ad61fa05de13ea2, type: 3}
+  explosionForce: 2
+  explosionRadius: 5
+  upForceMin: 0
+  upForceMax: 0.5
+  autoDestroy: 1
+  lifeTime: 5

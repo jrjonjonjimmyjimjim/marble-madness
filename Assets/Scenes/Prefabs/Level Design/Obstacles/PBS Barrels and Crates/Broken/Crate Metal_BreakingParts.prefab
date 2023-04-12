@@ -3229,7 +3229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000012167921242}
-  - component: {fileID: 7149254477173291194}
+  - component: {fileID: 7345118334695553870}
   m_Layer: 0
   m_Name: Crate Metal_BreakingParts
   m_TagString: Floor
@@ -3283,7 +3283,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7149254477173291194
+--- !u!114 &7345118334695553870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3292,15 +3292,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013709254234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfdbaee57b82c436d906ffa7d643cb15, type: 3}
+  m_Script: {fileID: 11500000, guid: c16cddbb3a58849a2966d50f2084408b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explodedPrefab: {fileID: 0}
   explosionForce: 2
   explosionRadius: 5
   upForceMin: 0
   upForceMax: 0.5
-  autoDestroy: 1
+  autoDestroy: 0
   lifeTime: 5
 --- !u!1 &1000013735639842
 GameObject:

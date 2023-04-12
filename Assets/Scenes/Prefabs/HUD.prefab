@@ -249,8 +249,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Powerup
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4375ed2dcbadd3847b889b2f46bcda80, type: 2}
+  m_sharedMaterial: {fileID: 2644229853477745757, guid: 4375ed2dcbadd3847b889b2f46bcda80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -384,8 +384,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Timer/Lives
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4375ed2dcbadd3847b889b2f46bcda80, type: 2}
+  m_sharedMaterial: {fileID: 2644229853477745757, guid: 4375ed2dcbadd3847b889b2f46bcda80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -519,8 +519,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tutorial
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4375ed2dcbadd3847b889b2f46bcda80, type: 2}
+  m_sharedMaterial: {fileID: 2644229853477745757, guid: 4375ed2dcbadd3847b889b2f46bcda80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -654,8 +654,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tutorial
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4375ed2dcbadd3847b889b2f46bcda80, type: 2}
+  m_sharedMaterial: {fileID: 2644229853477745757, guid: 4375ed2dcbadd3847b889b2f46bcda80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -769,3 +769,4 @@ MonoBehaviour:
   Scene_Text: {fileID: 3968272265327524939}
   GameMode_Text: {fileID: 4765965410726866978}
   Gameplay_Text: {fileID: 2972458873299915176}
+  Powerup_Text: {fileID: 3472948306426386959}
