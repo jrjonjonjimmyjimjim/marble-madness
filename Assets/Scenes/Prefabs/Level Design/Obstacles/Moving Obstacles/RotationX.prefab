@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4467461681439957056}
   - component: {fileID: 4467461681439957119}
   - component: {fileID: 4467461681439957116}
+  - component: {fileID: 7074535564733931070}
   - component: {fileID: 4467461681439957117}
   m_Layer: 0
   m_Name: RotationPlat (2)
@@ -167,6 +168,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7074535564733931070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4467461681439957057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 100
+  stunTime: 0.5
 --- !u!65 &4467461681439957117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -191,6 +206,7 @@ GameObject:
   - component: {fileID: 4467461681906247325}
   - component: {fileID: 4467461681906247394}
   - component: {fileID: 4467461681906247395}
+  - component: {fileID: 8976600811075325436}
   - component: {fileID: 4467461681906247392}
   - component: {fileID: 4467461681906247393}
   - component: {fileID: 4467461681906247398}
@@ -269,6 +285,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8976600811075325436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4467461681906247399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 1000
+  stunTime: 0.5
 --- !u!65 &4467461681906247392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -346,4 +376,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a7cb684736929247ac751d6ff0aec49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.5

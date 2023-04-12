@@ -71,6 +71,10 @@ namespace GameLogic
             if(rb.position.y < minY)
             {
                 Respawn();
+            }else if(rb.position.y < -1 && _rolling.isPlaying)
+            {
+                _canJump = false;
+                _rolling.Stop();
             }
 
             if (Input.GetMouseButtonDown(0))
@@ -162,6 +166,7 @@ namespace GameLogic
 
         public void HitPlayer(Vector3 hitDir)
         {
+            hitDir.y = 0;
             rb.AddForce(hitDir);
         }
 

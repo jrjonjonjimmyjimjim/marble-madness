@@ -4,13 +4,19 @@ namespace GameLogic
 {
     public class PlayMusic : MonoBehaviour
     {
-        private AudioSource _audio;
+        public static PlayMusic Instance;
+        public static AudioSource audio;
         private AudioClip _backgroundMusic;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
         // Start is called before the first frame update
         private void Start()
         {
-            _audio = GetComponent<AudioSource>();
+            audio = GetComponent<AudioSource>();
             _backgroundMusic = GameModeManager.GameMode switch
             {
                 GameMode.Tutorial => (AudioClip)Resources.Load("Sounds/Background/Tutorial"),
@@ -20,8 +26,9 @@ namespace GameLogic
                 _ => _backgroundMusic
             };
 
-            _audio.clip = _backgroundMusic;
-            _audio.Play();
+            audio.clip = _backgroundMusic;
+            audio.time = GameManager.music_time;
+            audio.Play();
         }
     }
 }

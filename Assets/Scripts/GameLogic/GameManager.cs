@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     static int level = 1;
     public static int maxLevel = 2;
     public static int lives = 5;
-    public static float timer = 0;
+    public static float timer = 30;
+    public static float music_time = 0;
 
     private void Awake()
     {
@@ -45,7 +46,7 @@ public class GameManager : MonoBehaviour
         level = 1;
         if(mode == GameMode.Time)
         {
-            timer = 5;
+            timer = 30;
         }else if(mode == GameMode.Survival)
         {
             lives = 5;
@@ -55,6 +56,7 @@ public class GameManager : MonoBehaviour
     public static void GoToNextLevel()
     {
         level++;
+        music_time = PlayMusic.audio.time;
         if(level > maxLevel)
         {
             SceneManager.LoadScene("GameOver");
