@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
-  limit: 75
+  limit: 45
   randomStart: 0
 --- !u!1 &5263193848945581321
 GameObject:

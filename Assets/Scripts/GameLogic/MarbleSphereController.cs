@@ -147,22 +147,37 @@ namespace GameLogic
         ///
 
 
+        
         private void OnCollisionEnter(Collision collision){
             if (!_canJump)
             {
                 _impact.volume = rb.velocity.y / 10;
                 _impact.Play();
+                if (collision.gameObject.tag == "Floor")
+                {
+                    _canJump = true;
+                }
             }
-            if(collision.gameObject.tag == "Floor")
-            {
-                _canJump = true;
-            }
-            else if(collision.gameObject.tag == "Obstacle" && GameModeManager.GameMode == GameMode.Survival)
+            if(collision.gameObject.tag == "Obstacle" && GameModeManager.GameMode == GameMode.Survival)
             {
                 GameManager.lives--;
                 Respawn();
             }
         }
+
+        /*private void OnCollisionExit()
+        {
+            _canJump = false;
+        }
+
+        private void OnCollisionStay(Collision collision)
+        {
+            if (collision.gameObject.tag == "Floor")
+            {
+                _canJump = true;
+            }
+        }*/
+        
 
         public void HitPlayer(Vector3 hitDir)
         {
