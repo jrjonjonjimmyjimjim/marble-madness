@@ -160,7 +160,6 @@ namespace GameLogic
             }
             if(collision.gameObject.tag == "Obstacle" && GameModeManager.GameMode == GameMode.Survival)
             {
-                GameManager.lives--;
                 Respawn();
             }
         }
@@ -187,6 +186,7 @@ namespace GameLogic
 
         public void Respawn()
         {
+            GameManager.lives--;
             rb.position = spawnPoint;
             rb.velocity = new Vector3(0, 0, 0);
             rb.angularVelocity = new Vector3(0, 0, 0);
