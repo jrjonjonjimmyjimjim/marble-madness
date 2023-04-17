@@ -7,18 +7,17 @@ namespace GameLogic
     ///     Controller class for the marble
     ///     Movement logic and other attributes are defined here
     /// </summary>
-
-    public enum Powerup {
+    public enum Powerup
+    {
         None,
         Superjump,
         Superspeed
-    };
+    }
 
     public class MarbleSphereController : MonoBehaviour
     {
         public float torque;
         public int minY = -50;
-        private Vector3 spawnPoint;
         public float maxAngularVelocity;
         public float jumpForce;
         public float superjumpForce;
@@ -36,6 +35,7 @@ namespace GameLogic
         private float _mouseXStart;
         private float _mouseYStart;
         private AudioSource _rolling;
+        private Vector3 spawnPoint;
 
         /// <summary>
         ///     Set default parameters for the marble such as:
@@ -68,10 +68,11 @@ namespace GameLogic
             }
 
 
-            if(rb.position.y < minY)
+            if (rb.position.y < minY)
             {
                 Respawn();
-            }else if(rb.position.y < -1 && _rolling.isPlaying)
+            }
+            else if (rb.position.y < -1 && _rolling.isPlaying)
             {
                 _canJump = false;
                 _rolling.Stop();
@@ -104,26 +105,20 @@ namespace GameLogic
                 _rolling.PlayOneShot(_jumpSound, 1);
             }
 
-            if(rb.angularVelocity.magnitude > 0 && _canJump)
+            if (rb.angularVelocity.magnitude > 0 && _canJump)
             {
-                float noise = rb.angularVelocity.magnitude / (maxAngularVelocity);
-                if(noise > 0.7)
-                {
-                    noise = (float)7/10;
-                }
-                
+                var noise = rb.angularVelocity.magnitude / maxAngularVelocity;
+                if (noise > 0.7) noise = (float)7 / 10;
+
                 _rolling.volume = noise;
                 _rolling.pitch = noise;
-                if (!_rolling.isPlaying)
-                {
-                    _rolling.Play();
-                }
+                if (!_rolling.isPlaying) _rolling.Play();
             }
-            
+
             if (Input.GetButton("Fire2"))
-            {
                 // TODO: We may want powerups to freeze motion first, then add force.
-                switch (currPowerup) {
+                switch (currPowerup)
+                {
                     case Powerup.None:
                         break;
                     case Powerup.Superjump:
@@ -135,8 +130,6 @@ namespace GameLogic
                         currPowerup = Powerup.None;
                         break;
                 }
-            }
-
         }
 
         /// <summary>
@@ -144,24 +137,16 @@ namespace GameLogic
         ///     jump
         /// </summary>
         /// <param name="collision"></param>
-        ///
-
-
-        
-        private void OnCollisionEnter(Collision collision){
+        private void OnCollisionEnter(Collision collision)
+        {
             if (!_canJump)
             {
                 _impact.volume = rb.velocity.y / 10;
                 _impact.Play();
-                if (collision.gameObject.tag == "Floor")
-                {
-                    _canJump = true;
-                }
+                if (collision.gameObject.tag == "Floor") _canJump = true;
             }
-            if(collision.gameObject.tag == "Obstacle" && GameModeManager.GameMode == GameMode.Survival)
-            {
-                Respawn();
-            }
+
+            if (collision.gameObject.tag == "Obstacle" && GameModeManager.GameMode == GameMode.Survival) Respawn();
         }
 
         /*private void OnCollisionExit()
@@ -176,7 +161,7 @@ namespace GameLogic
                 _canJump = true;
             }
         }*/
-        
+
 
         public void HitPlayer(Vector3 hitDir)
         {
