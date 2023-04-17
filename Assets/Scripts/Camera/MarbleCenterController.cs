@@ -26,6 +26,10 @@ namespace Camera
             {
                 turn.y += Input.GetAxis("Mouse Y") * sensitivity;
                 turn.x += Input.GetAxis("Mouse X") * sensitivity;
+
+                // Clamp the rotation so that the camera doesn't flip upside down
+                turn.y = Mathf.Clamp(turn.y, -60, 0);
+
                 transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
             }
         }
