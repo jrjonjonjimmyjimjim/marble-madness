@@ -3,7 +3,7 @@ using UnityEngine;
 namespace GameLogic
 {
     /// <summary>
-    ///     TODO: Fill this in
+    ///     Define the different game modes
     /// </summary>
     public enum GameMode
     {
@@ -15,13 +15,12 @@ namespace GameLogic
     }
 
     /// <summary>
+    ///     Tracks the current game mode
     /// </summary>
     public class GameModeManager : MonoBehaviour
     {
         public static GameModeManager Instance;
         public static GameMode GameMode;
-
-        // public static event Action<GameMode> OnGameModeChanged;
 
         private void Awake()
         {
@@ -36,21 +35,6 @@ namespace GameLogic
         public static void UpdateGameMode(GameMode newMode)
         {
             GameMode = newMode;
-
-            // switch(GameMode) {
-            //     case GameMode.Tutorial:
-            //         break;
-            //     case GameMode.Level:
-            //         break;
-            //     case GameMode.Menu:
-            //         break;
-            //     case GameMode.Time:
-            //         break;
-            //     case GameMode.Survival:
-            //         break;
-            // }
-
-            // OnGameModeChanged?.Invoke(newMode);
         }
     }
 }

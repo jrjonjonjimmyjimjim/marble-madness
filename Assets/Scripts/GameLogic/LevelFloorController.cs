@@ -10,6 +10,10 @@ namespace GameLogic
     {
         public Transform spawnPoint;
 
+        /// <summary>
+        ///     Reset the player's position and velocity to the spawn location when they fall off the level
+        /// </summary>
+        /// <param name="other"></param>
         private void OnTriggerEnter(Collider other)
         {
             var attachedRigidbody = other.attachedRigidbody;

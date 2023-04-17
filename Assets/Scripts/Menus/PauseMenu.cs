@@ -6,7 +6,6 @@ namespace Menus
     /// <summary>
     ///     Implement the pause menu functionality to return to the main menu
     ///     or to pause the game
-    ///     TODO: Add level restart or checkpoint restart button
     /// </summary>
     public class PauseMenu : MonoBehaviour
     {

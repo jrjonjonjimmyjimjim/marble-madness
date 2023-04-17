@@ -7,11 +7,11 @@ namespace GameLogic
     ///     Controller class for the marble
     ///     Movement logic and other attributes are defined here
     /// </summary>
-    public enum Powerup
+    public enum PowerUp
     {
         None,
-        Superjump,
-        Superspeed
+        SuperJump,
+        SuperSpeed
     }
 
     public class MarbleSphereController : MonoBehaviour
@@ -20,11 +20,11 @@ namespace GameLogic
         public int minY = -50;
         public float maxAngularVelocity;
         public float jumpForce;
-        public float superjumpForce;
-        public float superspeedForce;
+        public float superJumpForce = 5000f;
+        public float superSpeedForce = 10000f;
         public Rigidbody rb;
         public Transform gameCamera;
-        public Powerup currPowerup;
+        public PowerUp currPowerUp;
 
         private AudioSource[] _audio;
 
@@ -41,6 +41,8 @@ namespace GameLogic
         ///     Set default parameters for the marble such as:
         ///     - A maximum angular velocity
         ///     - A flag that checks whether or not the marble can jump
+        ///     - Sound effects
+        ///     - The spawn point
         /// </summary>
         private void Start()
         {
@@ -67,7 +69,7 @@ namespace GameLogic
                 return;
             }
 
-
+            // If the marble has fallen too far, then respawn it
             if (rb.position.y < minY)
             {
                 Respawn();
@@ -78,6 +80,9 @@ namespace GameLogic
                 _rolling.Stop();
             }
 
+
+            // Save the mouse position when the left mouse button is clicked and released to determine the direction of
+            // the flick
             if (Input.GetMouseButtonDown(0))
             {
                 var mousePos = Input.mousePosition;
@@ -105,6 +110,7 @@ namespace GameLogic
                 _rolling.PlayOneShot(_jumpSound, 1);
             }
 
+            // Play a rolling sound when the marble is moving
             if (rb.angularVelocity.magnitude > 0 && _canJump)
             {
                 var noise = rb.angularVelocity.magnitude / maxAngularVelocity;
@@ -117,59 +123,47 @@ namespace GameLogic
 
             if (Input.GetButton("Fire2"))
                 // TODO: We may want powerups to freeze motion first, then add force.
-                switch (currPowerup)
+                switch (currPowerUp)
                 {
-                    case Powerup.None:
+                    case PowerUp.None:
                         break;
-                    case Powerup.Superjump:
-                        rb.AddForce(new Vector3(0, superjumpForce, 0));
-                        currPowerup = Powerup.None;
+                    case PowerUp.SuperJump:
+                        rb.AddForce(new Vector3(0, superJumpForce, 0));
+                        currPowerUp = PowerUp.None;
                         break;
-                    case Powerup.Superspeed:
-                        rb.AddForce(gameCamera.forward * superspeedForce);
-                        currPowerup = Powerup.None;
+                    case PowerUp.SuperSpeed:
+                        rb.AddForce(gameCamera.forward * superSpeedForce);
+                        currPowerUp = PowerUp.None;
                         break;
                 }
         }
 
         /// <summary>
-        ///     When the marble comes in contact with the floor, the marble should be able to
-        ///     jump
+        ///     When the marble comes in contact with the floor, the marble should be able to jump
         /// </summary>
         /// <param name="collision"></param>
         private void OnCollisionEnter(Collision collision)
         {
-            if (!_canJump)
-            {
-                _impact.volume = rb.velocity.y / 10;
-                _impact.Play();
-                if (collision.gameObject.tag == "Floor") _canJump = true;
-            }
-
+            _impact.volume = rb.velocity.y / 10;
+            _impact.Play();
+            if (collision.gameObject.tag == "Floor") _canJump = true;
             if (collision.gameObject.tag == "Obstacle" && GameModeManager.GameMode == GameMode.Survival) Respawn();
         }
 
-        /*private void OnCollisionExit()
-        {
-            _canJump = false;
-        }
-
-        private void OnCollisionStay(Collision collision)
-        {
-            if (collision.gameObject.tag == "Floor")
-            {
-                _canJump = true;
-            }
-        }*/
-
-
+        /// <summary>
+        ///     Move the marble in the direction of the hit
+        /// </summary>
+        /// <param name="hitDir"></param>
         public void HitPlayer(Vector3 hitDir)
         {
             hitDir.y = 0;
             rb.AddForce(hitDir);
         }
 
-        public void Respawn()
+        /// <summary>
+        ///     When the marble falls too far, it should respawn at the spawn point
+        /// </summary>
+        private void Respawn()
         {
             GameManager.lives--;
             rb.position = spawnPoint;

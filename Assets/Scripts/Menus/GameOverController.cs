@@ -12,17 +12,14 @@ public class GameOverController : MonoBehaviour
         switch (GameModeManager.GameMode)
         {
             case GameMode.Survival:
-                if (GameManager.lives > 0)
-                    message.text = "Congradulations! You Won!";
-                else
-                    message.text = "You ran out of lives. Try Again";
+                message.text = GameManager.lives > 0 ? "Congratulations! You Won!" : "You ran out of lives. Try Again";
                 break;
             case GameMode.Time:
-                if (GameManager.timer > 0)
-                    message.text = "Congradulations! You Won!";
-                else
-                    message.text = "You ran out of time. Try Again";
+                message.text = GameManager.timer > 0 ? "Congratulations! You Won!" : "You ran out of time. Try Again";
                 break;
+            case GameMode.Tutorial:
+            case GameMode.Level:
+            case GameMode.Menu:
             default:
                 message.text = "";
                 break;

@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace GameLogic
 {
+    /// <summary>
+    ///     Controller for music playback
+    /// </summary>
     public class PlayMusic : MonoBehaviour
     {
         public static PlayMusic Instance;
@@ -13,7 +16,9 @@ namespace GameLogic
             Instance = this;
         }
 
-        // Start is called before the first frame update
+        /// <summary>
+        ///     Set the background music based on the current game mode
+        /// </summary>
         private void Start()
         {
             audio = GetComponent<AudioSource>();

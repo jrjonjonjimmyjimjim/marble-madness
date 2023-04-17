@@ -6,9 +6,6 @@ namespace Menus
     /// <summary>
     ///     Implements the logic for the level select screen from the main menu
     ///     Load certain levels based on the buttons clicked
-    ///     TODO: I want to somehow dynamically place the buttons somehow, but it seems like getting into too
-    ///     much work, and I think that placing the buttons on the canvas with the editor is probably
-    ///     fine
     /// </summary>
     public class LevelSelect : MonoBehaviour
     {

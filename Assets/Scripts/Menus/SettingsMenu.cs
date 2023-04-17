@@ -14,7 +14,7 @@ namespace Menus
     {
         public Toggle fullscreenTog;
         public TMP_Dropdown qualityDropdown;
-        public AudioMixer audioMixer; // TODO connect this
+        public AudioMixer audioMixer;
         public Slider volumeSlider;
         public TextMeshProUGUI volumeText;
         public TMP_Dropdown resolutionDropdown;

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using GameLogic;
 using UnityEngine;
 
 namespace Menus
@@ -10,7 +11,7 @@ namespace Menus
         public static SettingsMenuOptions instance;
 
         // TODO: Connect the audio source to make the volume slider responsive
-        // public AudioSource AudioSource { get; set; }
+        public AudioSource AudioSource { get; set; }
         public float CurrentVolume { get; set; }
         public List<string> QualityOptions { get; private set; }
         public int QualityIndex { get; set; }
@@ -56,6 +57,9 @@ namespace Menus
 
             // Set the default volume to 100
             CurrentVolume = 100;
+
+            // Set the audio source
+            AudioSource = PlayMusic.audio;
 
             instance = this;
             DontDestroyOnLoad(gameObject);
