@@ -121,7 +121,7 @@ namespace GameLogic
                 if (!_rolling.isPlaying) _rolling.Play();
             }
 
-            if (Input.GetButton("Fire2"))
+            if (Input.GetButton("Fire3"))
                 // TODO: We may want powerups to freeze motion first, then add force.
                 switch (currPowerUp)
                 {
