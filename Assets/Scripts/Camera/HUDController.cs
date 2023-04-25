@@ -48,6 +48,14 @@ namespace Camera
                 GameMode.Survival => "Lives: " + GameManager.lives,
                 _ => Gameplay_Text.text
             };
+
+            Powerup_Text.text = MarbleSphereController.currPowerUp switch
+            {
+                PowerUp.None => "No Powerup",
+                PowerUp.SuperJump => "Superjump",
+                PowerUp.SuperSpeed => "Superspeed",
+                _ => "No Powerup"
+            };
         }
     }
 }

@@ -11,7 +11,7 @@ namespace GameLogic
     {
         public static GameManager Instance;
         private static int level = 1;
-        private static int maxLevel = 3;
+        private static int maxLevel = 4;
         public static int lives = 5;
         public static float timer = 30;
         public static float music_time;

@@ -20,7 +20,7 @@ namespace GameLogic
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                marbleSphereController.currPowerUp = powerUpType;
+                MarbleSphereController.currPowerUp = powerUpType;
             }
         }
     }

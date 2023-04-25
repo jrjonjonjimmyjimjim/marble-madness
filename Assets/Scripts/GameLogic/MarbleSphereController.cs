@@ -24,7 +24,7 @@ namespace GameLogic
         public float superSpeedForce = 10000f;
         public Rigidbody rb;
         public Transform gameCamera;
-        public PowerUp currPowerUp;
+        public static PowerUp currPowerUp;
 
         private AudioSource[] _audio;
 
@@ -156,8 +156,10 @@ namespace GameLogic
         /// <param name="hitDir"></param>
         public void HitPlayer(Vector3 hitDir)
         {
-            hitDir.y = 0;
-            rb.AddForce(hitDir);
+            if (GameModeManager.GameMode != GameMode.Survival) {
+                hitDir.y = 0;
+                rb.AddForce(hitDir);
+            }
         }
 
         /// <summary>
@@ -169,6 +171,7 @@ namespace GameLogic
             rb.position = spawnPoint;
             rb.velocity = new Vector3(0, 0, 0);
             rb.angularVelocity = new Vector3(0, 0, 0);
+            currPowerUp = PowerUp.None;
         }
     }
 }
