@@ -244,13 +244,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torque: 5
   minY: -15
-  maxAngularVelocity: 20
+  maxAngularVelocity: 30
   jumpForce: 2500
-  superjumpForce: 0
-  superspeedForce: 0
+  superJumpForce: 5000
+  superSpeedForce: 10000
   rb: {fileID: 8419968778570887157}
   gameCamera: {fileID: 0}
-  currPowerup: 0
 --- !u!82 &8419968778570887163
 AudioSource:
   m_ObjectHideFlags: 0

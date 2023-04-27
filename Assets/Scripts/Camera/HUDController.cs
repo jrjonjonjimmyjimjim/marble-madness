@@ -44,7 +44,7 @@ namespace Camera
             GameManager.CheckStatus();
             Gameplay_Text.text = GameModeManager.GameMode switch
             {
-                GameMode.Time => "Time: " + GameManager.timer.ToString("F2"),
+                GameMode.Time => "Time: " + GameManager.timer.ToString("0"),
                 GameMode.Survival => "Lives: " + GameManager.lives,
                 _ => Gameplay_Text.text
             };

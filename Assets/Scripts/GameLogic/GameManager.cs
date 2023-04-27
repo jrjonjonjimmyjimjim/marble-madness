@@ -61,10 +61,10 @@ namespace GameLogic
             switch (mode)
             {
                 case GameMode.Time:
-                    timer = 30;
+                    timer = 180;
                     break;
                 case GameMode.Survival:
-                    lives = 5;
+                    lives = 10;
                     break;
             }
         }
@@ -84,6 +84,7 @@ namespace GameLogic
             else
             {
                 timer += 30;
+                lives += 1;
                 SceneManager.LoadScene("Level" + level);
             }
         }
