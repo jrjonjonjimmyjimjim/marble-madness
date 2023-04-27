@@ -11,6 +11,8 @@ namespace GameLogic
 
         public PowerUp powerUpType;
 
+        public AudioSource powerUpSound;
+
         /// <summary>
         ///     When the powerup comes in contact with anything, assume it was the marble,
         ///     then give the marble the powerup
@@ -21,6 +23,7 @@ namespace GameLogic
             if (other.gameObject.CompareTag("Player"))
             {
                 MarbleSphereController.currPowerUp = powerUpType;
+                powerUpSound.Play();
             }
         }
     }

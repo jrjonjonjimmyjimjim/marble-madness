@@ -31,6 +31,7 @@ namespace GameLogic
         private bool _canJump;
         private AudioSource _impact;
         private AudioClip _jumpSound;
+        private AudioClip _deathSound;
 
         private float _mouseXStart;
         private float _mouseYStart;
@@ -52,6 +53,7 @@ namespace GameLogic
             _rolling = _audio[0];
             _impact = _audio[1];
             _jumpSound = (AudioClip)Resources.Load("Sounds/SFX/Jump");
+            _deathSound = (AudioClip)Resources.Load("Sounds/SFX/Death");
             spawnPoint = rb.position;
         }
 
@@ -168,6 +170,8 @@ namespace GameLogic
         private void Respawn()
         {
             GameManager.lives--;
+            _rolling.Stop();
+            _rolling.PlayOneShot(_deathSound);
             rb.position = spawnPoint;
             rb.velocity = new Vector3(0, 0, 0);
             rb.angularVelocity = new Vector3(0, 0, 0);

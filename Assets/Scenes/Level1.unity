@@ -4548,6 +4548,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1121041820868094324, guid: 5cab90942de91c548a1cdd8265cd81d4, type: 3}
+      propertyPath: _audio
+      value: 
+      objectReference: {fileID: 1121041820097594125}
     - target: {fileID: 1121041820868094330, guid: 5cab90942de91c548a1cdd8265cd81d4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4764,5 +4768,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8928543548096568995, guid: 5cab90942de91c548a1cdd8265cd81d4, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cab90942de91c548a1cdd8265cd81d4, type: 3}
+--- !u!82 &1121041820097594125 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8928543548096568995, guid: 5cab90942de91c548a1cdd8265cd81d4, type: 3}
+  m_PrefabInstance: {fileID: 1121041820097594124}
+  m_PrefabAsset: {fileID: 0}
