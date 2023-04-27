@@ -12,6 +12,7 @@ namespace Menus
         public static bool isPaused;
         public GameObject pauseMenu;
         public GameObject settingsMenu;
+        public AudioSource _audio;
 
         /// <summary>
         ///     Pause the game by setting the timescale to 0 or else to 1 as normal
@@ -32,6 +33,7 @@ namespace Menus
         public void TogglePause()
         {
             isPaused = !isPaused;
+            _audio.Play();
         }
 
         /// <summary>
