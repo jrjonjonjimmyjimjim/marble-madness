@@ -620,6 +620,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7932999954775621789, guid: 4d1f6f81230e14642b9d509bab86fe17, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932999954775621789, guid: 4d1f6f81230e14642b9d509bab86fe17, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menus.PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5632110345306829153, guid: 4d1f6f81230e14642b9d509bab86fe17, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4d1f6f81230e14642b9d509bab86fe17, type: 3}
