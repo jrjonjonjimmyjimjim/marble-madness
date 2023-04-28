@@ -476,6 +476,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1121041820868094330}
     m_Modifications:
+    - target: {fileID: 1700216695338406767, guid: 4d1f6f81230e14642b9d509bab86fe17, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menus.PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2099818228854428720, guid: 4d1f6f81230e14642b9d509bab86fe17, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 125

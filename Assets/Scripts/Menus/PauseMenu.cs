@@ -30,10 +30,13 @@ namespace Menus
         /// <summary>
         ///     Negate the current value of the paused boolean
         /// </summary>
-        public void TogglePause()
+        public void TogglePause(bool music = true)
         {
             isPaused = !isPaused;
-            _audio.Play();
+            if(music)
+            {
+                _audio.Play();
+            }
         }
 
         /// <summary>
@@ -42,7 +45,7 @@ namespace Menus
         public void ShowMenu()
         {
             Time.timeScale = 1f;
-            TogglePause();
+            TogglePause(false);
             SceneManager.LoadScene("MainMenu");
         }
 
