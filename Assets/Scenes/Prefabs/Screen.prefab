@@ -209,6 +209,8 @@ MonoBehaviour:
     Space to
     Jump
 
+    Left shift for Powerups
+
     Esc to Pause'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4375ed2dcbadd3847b889b2f46bcda80, type: 2}
