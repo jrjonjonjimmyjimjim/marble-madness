@@ -8,7 +8,7 @@ PhysicMaterial:
   m_PrefabAsset: {fileID: 0}
   m_Name: pmat_marble
   dynamicFriction: 1
-  staticFriction: 1.5
+  staticFriction: 1.2
   bounciness: 0.75
   frictionCombine: 0
   bounceCombine: 0

@@ -32,6 +32,7 @@ namespace GameLogic
         private AudioSource _impact;
         private AudioClip _jumpSound;
         private AudioSource _death;
+        private AudioSource _powerup;
 
         private float _mouseXStart;
         private float _mouseYStart;
@@ -53,6 +54,7 @@ namespace GameLogic
             _rolling = _audio[0];
             _impact = _audio[1];
             _death = _audio[2];
+            _powerup = _audio[3];
             _jumpSound = (AudioClip)Resources.Load("Sounds/SFX/Jump");
             spawnPoint = rb.position;
         }
@@ -130,10 +132,13 @@ namespace GameLogic
                     case PowerUp.None:
                         break;
                     case PowerUp.SuperJump:
+                        _powerup.Play();
+                        _canJump = false;
                         rb.AddForce(new Vector3(0, superJumpForce, 0));
                         currPowerUp = PowerUp.None;
                         break;
                     case PowerUp.SuperSpeed:
+                        _powerup.Play();
                         rb.AddForce(gameCamera.forward * superSpeedForce);
                         currPowerUp = PowerUp.None;
                         break;
